@@ -1,6 +1,8 @@
-# *Farmhand*
+# *Player Backgrounds*
 
-## **3 Valor**
+## **Farmhand**
+
+3 Valor
 
 Greatspear, Hat, Boots, Dagger
 
