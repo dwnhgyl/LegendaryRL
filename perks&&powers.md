@@ -24,17 +24,21 @@ The effects that spells have scale with spellpower, a hidden stat determined by 
 
 **Wind Step**: 4 turns. Causes targeted creature (including the player) to gain the Wind Step buff for a short duration. This buff makes movement instant on a 2 turn cooldown, grants Flight, and grants a moderate dodge bonus.
 
-**Cold Wind**: 6 turns. The player is prompted to target a space, and then set a direction. A special effect fills a moderate-size, roughly rectangular area. Enemies within this effect take light cold damage and are knocked back a very short distance in the direction that was set. The player is unaffected.
+**Cold Wind**: 5 turns. The player is prompted to target a space, and then set a direction. A special effect fills a moderate-size, roughly rectangular area. Enemies within this effect take light cold damage and are knocked back a very short distance in the direction that was set. The player is unaffected.
 
 **Dispel**: 3 turns. Affects a targeted space within line of sight. An instant anti-magic effect is applied to all creatures and objects in that space, removing any ongoing magical effects. Magical enemies gain the “nullified” debuff for a short duration, losing the ability to channel any spells, and possibly certain intrinsics. Undead are dealt light damage. Constructs are dealt heavy damage.
 
 **Flash**: 2 turns. A small area of effect a short range away from the caster. Spaces in this area become Brightly Lit for 1 round. Enemies in this area take light fire damage, and are blinded for a short duration if the space they were standing in was formerly Dark, or they have Light Sensitivity.
 
+**Shardspray**: 3 turns. This spell creates a scaling number of projectiles that immediately fire off in random directions. If cast on the floor, these can be in any of 16 directions (the 8 movement directions, plus 1 in between each of them). If cast on a wall, adjacent walls will prevent shards from firing in their direction, resulting in a more concentrated burst of shards. Each shard deals light physical damage and has high accuracy. These projectiles go through the player without triggering any effects. With this spell, the projectiles originate adjacent to the space targeted, and thus an enemy on a targetted floor space will be undamaged.
+
+**Lava Fissure**: 5 turns. Targetted space in short range, no los required. A small area around the targetted space becomes highly dangerous "spell-lava" terrain. This terrain is identical to lava, except that all damage it causes scales with spellpower and is reduced by 90% when applied to the player.
+
 **Bless Equipment**: 10 turns. Applies a “blessed” trait to a piece of equipment, increasing its effective enhancement bonus by a figure that scales with spellpower. This trait is removed when the spell is cast again, and between levels. (Enemies who use a scroll of bless equipment gain a permanent attack buff, and lose “keeps distance”)
 
 **Blast of Wind**: 3 turns. Fires a short-range projectile that can penetrate any number of enemies. Enemies hit take light physical damage and are knocked back a short distance.
 
-**Stone Body**: 6 turns. The player gains the “Stone Body” buff, gaining a small bonus to armor for a moderate duration. The player also gains resistance to lightning and fire, and slow movement, for the same duration.
+**Stone Body**: 6 turns. The player gains the “Stone Body” buff, gaining a small bonus to armor for a moderate duration and increasing armor apply chance by 10%. The player also gains resistance to lightning and fire, and slow movement, for the same duration.
 
 **Shadows**: 5 turns. If the player’s space is targeted, the player gains the “Shadows” buff, gaining a moderate stealth bonus in shade and darkness. If any other space is targeted, a moderate area of effect around the targeted space becomes one step darker than it would be otherwise.
 
@@ -47,6 +51,8 @@ The effects that spells have scale with spellpower, a hidden stat determined by 
 **Read Magic**: 2 turns. Once cast, the player is prompted to choose a scroll or scribe’s scraps from their inventory. If an unidentified scroll is chosen, that scroll is identified. If an identified scroll is chosen, the player begins to cast that spell as if from their spell list without consuming the scroll (this is cast at 75% normal spellpower). If scribe’s scraps are chosen, the player is prompted to turn it into one of three scrolls (taken from the list of identified scrolls).
 
 ## *Tricks*
+
+
 
 **Assassinate**: Unlocks a critical strike option with a +200% damage multiplier. If the enemy dies, their death does not make any extra noise (same sneak/hide malus as moving). If the attack deals sneak attack damage (such as against an unaware target) that damage is tripled as well.
 
@@ -79,7 +85,7 @@ The effects that spells have scale with spellpower, a hidden stat determined by 
 
 **Rapid Strikes**: Unlocks a normal attack and a critical attack. The normal attack consists an unmodified attack that, once resolved, triggers another unmodified attack next turn, followed by a third attack which is instantaneous but otherwise unmodified. This effectively allows the player to make 3 attacks against the same space in 2 turns. The critical version of this attack has a 1.2 damage multiplier. If it hits, the target is stunned for 1 round. This attack triggers additional attacks, much like the normal version, except with the 1.2 damage multiplier.
 
-**Follow-Through**: Increases the Cleave value of all your melee attacks by 1. Increases the number of enemies your projectile weapons can penetrate before stopping by 1.
+**Follow-Through**: Increases the Cleave value of all your melee attacks by 1. Increases the number of enemies your projectile weapons can penetrate before stopping by 1. Grants a new critical strike, "Hewing Fell". This attack deals triple damage and drops guard. Like other critical strikes, it does not cleave normally. However, it checks cleave, and targets adjacent enemies with attack using the "Reckless Attack" profile, according to the cleave number.
 
 **Power Blow**: Standing still while holding a melee weapon causes you to gain stacks of the “Power Blow” buff, that are lost if you do anything else. When you’ve accrued 4 stacks you may use the “Power Blow” melee attack from the strike menu, which cannot be parried, has a large damage multiplier, and causes small knockback.
 
