@@ -12,6 +12,8 @@ The effects that spells have scale with spellpower, a hidden stat determined by 
 
 **Call Fog**: 4 turns. Creates a large hidden area of effect centered on a targeted space (place anywhere, line of sight unnecessary). Spaces in this area of effect will randomly emit “Fog” gas for a long duration. The result is fog appearing in that area over a number of turns, potentially spilling into areas outside the radius if possible. 3 consecutive tiles of fog block line of sight for everything but the player, and any creature standing a fog space receives a significant hide bonus and a small sneak bonus. Unlike other effects that alter terrain, this makes no noise.
 
+**Chilling Coalescence**: 5 turns. All enemies in a small aoe suffer the "coalescence" debuff for a short time, taking light cold damage and suffering slow movement for the duration. Empty tiles within the aoe have a 20% chance of becoming ice block walls for the duration of the spell.
+
 **Fireball**: 3 turns. Shoots a projectile which, upon hitting an enemy, a wall, or the targeted space, deals moderate fire damage in a moderate aoe. Notably, damage dropoff only reaches half damage at the edge of the radius, unlike other aoe damage effects. The projectile has a speed of 4 spaces per round. Fireball deals (60-Spellpower)% damage to the caster.
 
 **Lightning Bolt**: 3 turns. Shoots an instantaneous projectile which can travel through any number of enemy spaces, dealing moderate lightning damage to each enemy it passes through.
@@ -32,6 +34,8 @@ The effects that spells have scale with spellpower, a hidden stat determined by 
 
 **Flash**: 2 turns. A small area of effect a short range away from the caster. Spaces in this area become Brightly Lit for 1 round. Enemies in this area take light fire damage, and are blinded for a short duration if the space they were standing in was formerly Dark, or they have Light Sensitivity.
 
+**Scouring Wind**: 4 turns. A targeted enemy is afflicted with the "scoured" debuff for a very short period of time. This debuff has the following effects each round: the enemy will take light physical damage each round. The enemy will be disarmed if possible. The enemy will suffer a small amount of armor corrosion. The enemy will be knocked back very little, in a direction set by the caster upon casting the spell. 
+
 **Shardspray**: 3 turns. This spell creates a scaling number of projectiles that immediately fire off in random directions. If cast on the floor, these can be in any of 16 directions (the 8 movement directions, plus 1 in between each of them). If cast on a wall, adjacent walls will prevent shards from firing in their direction, resulting in a more concentrated burst of shards. Each shard deals light physical damage and has high accuracy. These projectiles go through the player without triggering any effects. With this spell, the projectiles originate adjacent to the space targeted, and thus an enemy on a targetted floor space will be undamaged.
 
 **Lava Fissure**: 5 turns. Targetted space in short range, no los required. A small area around the targetted space becomes highly dangerous "spell-lava" terrain. This terrain is identical to lava, except that all damage it causes scales with spellpower and is reduced by 90% when applied to the player.
@@ -42,7 +46,7 @@ The effects that spells have scale with spellpower, a hidden stat determined by 
 
 **Stone Body**: 6 turns. The player gains the “Stone Body” buff, gaining a small bonus to armor for a moderate duration and increasing armor apply chance by a small amount. The player also gains resistance to lightning and fire, and slow movement, for the same duration.
 
-**Shadows**: 5 turns. If the player’s space is targeted, the player gains the “Shadows” buff, gaining a moderate stealth bonus in shade and darkness. If any other space is targeted, a moderate area of effect around the targeted space becomes one step darker than it would be otherwise.
+**Shadows**: 5 turns. Creates a moderate-sized area of effect. This effect makes the spaces inside dark with a high priority. It also applies a "fade" buff to the caster as long as they are within the area, granting a small bonus to Hide. This spell only makes noise if it affects a space that is brightly lit.
 
 **Brutish Transformation**: 10 turns. For a long duration, the player gains a moderate bonus to melee damage, melee attack rolls, parry value, and armor value. The player cannot access the inventory, interact with items, or use Feats or Tricks.
 
