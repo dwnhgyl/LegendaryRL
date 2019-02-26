@@ -4,19 +4,23 @@
 
 Items represent a collection of small, useful, and expendable tools.
 
-**Potions**: Potions are identifiable items. Before a type of potion is identified, it appears as an “unknown potion.” When a potion’s unique effects are observed, the potion is immediately identified. There are three ways to interact with potions, but not all potions have unique results for every interaction. For instance, if a potion of might or speed is thrown, it will be destroyed without being identified. Typically, if a potion with no coat or drink effect is drunk or used to coat a weapon, it will act as if thrown onto the player’s space (and be identified as normal).
+**Potions**: Potions are identifiable items. Before a type of potion is identified, it appears as an “unknown potion.” When a potion’s unique effects are observed, the potion is immediately identified. There are three ways to interact with potions, but not all potions have unique results for every interaction. For instance, if a potion of might or speed is thrown, it will be destroyed without being identified. Typically, if a potion with no coat or drink effect is drunk or used to coat a weapon, it will act as if thrown onto the player’s space (and be identified as normal). Likewise, if a potion with no thrown effect is thrown at an enemy, it will resolve its drink effect on the enemy struck.
 
     Some enemies can use potions. Enemies use each type of potion a specific way. t indicates a potion enemies will throw at the player. d indicates a potion enemies will drink. c indicates a potion enemies will use to coat their weapon (this applies an enemy-only buff, since enemies don’t actually use equipment).
+    
+**Potion of Brilliance<sup>d</sup>**: When drunk, the drinker gains a large bonus to spellpower, their channeling time is reduced by 1, and they gain telepathy in a large oblong shape in front of them.
 
 **Potion of Paralysis<sup>t</sup>**: If thrown, releases a cloud of paralytic gas. If drunk, ???
 
 **Potion of Fire<sup>t</sup>**: If thrown, creates a fiery explosion. If drunk, applies fire immunity buff. If used to coat weapon, applies extra fire damage on hit. For as long as weapon coating is in effect the weapon acts as a light source.
 
-**Potion of Might<sup>d</sup>**: If drunk, player gains the mighty buff, applying a large buff to weapon damage, weapon accuracy, and armor, as well as health regeneration and fast attack.
+**Fragmentation Potion<sup>t</sup>**: When thrown, this potion creates an effect similar in many respects to the shardspray spell. One significant difference: any projectiles aimed in the general direction it was thrown in originate on the space it detonates, rather than the adjacent spaces. This means that an enemy struck with this potion will be struck with on average half of the shards produced.
+
+**Potion of Might<sup>d</sup>**: If drunk, player gains the mighty buff, applying a large buff to weapon damage, weapon accuracy, and armor, as well as health regeneration and fast attack. If used to coat a weapon, that weapon gains a large buff to base damage, accuracy, and is immune to damage for the duration.
 
 **Potion of Darkness<sup>t</sup>**: If drunk, applies the shadows buff, gaining a bonus to stealth when in darkness. If thrown, creates an area of magical darkness in radius 10.
 
-**Potion of Acid<sup>t</sup>**: If thrown, deals acid damage to whatever it hits, and creates an acid puddle beneath it, similar to acid glob. If drunk, applies acid immunity buff. If used to coat a weapon, damages the weapon.
+**Potion of Acid<sup>t</sup>**: If thrown, deals acid damage to whatever it hits, and creates an acid puddle beneath it, similar to acid glob. If drunk, applies acid immunity buff, AFTER dealing a small amount of irreducible damage. If used to coat a weapon, damages the weapon.
 
 **Potion of Frost**<sup>t</sup>: If thrown, releases a cloud of frost gas. If drunk, applies cold immunity buff.
 
@@ -179,7 +183,7 @@ Poor damage, fair accuracy, quiver=8, reload=1, projectile speed=7, Enc=1.
 
 A sling can be used one-handed, perhaps with a one-handed melee weapon. In this case, it takes 2 turns to reload instead of one.
 
-This weapon can be fired without ammo, though it has less accuracy and damage. While the player has a sling equipped, there is no limit on the distance they can throw potions, and thrown potions travel at 7 spaces a round instead of 4.
+This weapon can be fired without ammo, though this increases reload time by one, and the shot will have less accuracy and damage. While the player has a sling equipped, there is no limit on the distance they can throw potions, and thrown potions travel at 7 spaces a round instead of 4.
 
     “Hardly the deadliest of weapons, the sling is not highly regarded nor widely used. It is most commonly used among your own people, as the weapon and its bullets are lightweight and compact and, in a pinch, it can be loaded with rocks from the ground.
 
@@ -246,7 +250,7 @@ Good armor bonus, Enc=6.
 
     “Plate armor is assembled from many pieces onto the bodies of soldiers representing organizations with immense resources. However, with a few scraps of chainmail, some belts here and there, and some good adventuring know-how, a breastplate can be maintained and used by a lone warrior.”
 
-## *Headgear*
+## **Headgear**
 
 **Hat**
 
@@ -261,21 +265,38 @@ A +0 hat provides no effect. As enhancement bonus increases, magic hats give a b
 Enc=1
 
 A +0 light helm provides a 10% bonus to armor apply chance. As enhancement bonus increases, a light helm grants bonuses to Armor and Spot.
-    "Skullcap. Noseguard. Strap. A simple, reliable design that has protected the skulls of conscripts and kings for centuries."
     
+    "Skullcap. Noseguard. Strap. A simple, reliable design that has protected the skulls of conscripts and kings for centuries."  
+
 **Greathelm**
 
 Enc=2
 
 A +0 greathelm provides a 15% bonus to armor apply chance, but grants a malus to Spot and Listen. As enhancement bonus increases, a greathelm grants a bonus to Armor.
         
-        "Looking at the world through the slits of a faceguard is hardly ideal. On the other hand, it is ideal for looking at sharpened blades swung with murderous intent. The tales are clear: all the armor in the world won't save you if you go into battle with your head exposed."
+     "Looking at the world through the slits of a faceguard is hardly ideal. On the other hand, it is ideal for looking at sharpened blades swung with murderous intent. The tales are clear: all the armor in the world won't save you if you go into battle with your head exposed."
         
 **Hood**
 
 Enc=0
 
 A +0 hood provides a small bonus to Hide. As enhancement bonus increases, a hood provides a bonus to Hide and Spot.
+
+**Headband**
+
+Enc=0
+
+A +0 headband provides a small bonus to accuracy and spot, which increases as enhancement bonus increases.
+
+    "This scrap of silk should be sturdy enough to make a good headband. Keep it clean, keep it tight, and keep it on your head, the tales say. It will keep your hair out of your eyes. Your hair and your blood."
+    
+**Mask**
+
+Enc=0
+
+A +0 mask provides no effect. As enhancement bonus increases, masks gain egos at a rapid rate.
+
+    "Ask not who is behind the mask, say the tales. Ask not after the man inside. Ask instead after the nature of the mask, for that is what the man inside has become."
 
 
 ## **Hand Equipment**
@@ -285,14 +306,14 @@ Enc=0
 
 A +0 set of gloves gives a bonus to accuracy. As enhancement bonus increases, gloves grant a bonus to accuracy, parry, and weapon damage.
 
-        "To keep hold of a weapon in the hellish tempest of hand-to-hand combat taxes the skin and flesh of any warrior. A good pair of gloves like these can help keep your grip fresh."
+    "To keep hold of a weapon in the hellish tempest of hand-to-hand combat taxes the skin and flesh of any warrior. A good pair of gloves like these can help keep your grip fresh."
 
 **Bracers**
 Enc=1
 
 A +0 pair of braces gives a tiny parry bonus and a 5% bonus to armor apply chance. As enhancement bonus increases, bracers grant a parry bonus.
 
-    "The forearm needn't bend. Actually, the forearm really ought not to bend, nor be crushed, or cut in twain. For these reasons, metal plate makes for welcome protection. Though the weight will slow your arms, a pair of bracers can turn aside otherwise deadly blows."
+    "The forearm needn't bend. Actually, the forearm really ought not to bend, nor be crushed, nor cut in twain. For these reasons, metal plate makes for welcome protection. Though the weight will slow your arms, a pair of bracers can turn aside otherwise deadly blows."
     
 **Gauntlets**
 Enc=2
