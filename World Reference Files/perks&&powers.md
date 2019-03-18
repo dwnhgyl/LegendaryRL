@@ -4,7 +4,7 @@
 
 Spells are activated from the spell menu, putting the player into a “channeling” state, doing nothing else for the duration. The player can continue channeling by pressing the wait/hide button, or cancel the channel by performing any other action, including casting a new spell. Channeling has the same effect on stealth value that moving around does. After channeling for a number of rounds determined by the spell, the spell takes effect and the player reverts to a normal state.
 
-The effects that spells have scale with spellpower, a hidden stat determined by wisdom and item bonuses.
+The effects that spells have scale with spell power, a hidden stat determined by wisdom and item bonuses.
 
 **Brilliance**: 4 turns. Targeted space becomes the center of a very powerful light source. A moderate area of effect around the origin of this light source (such that it covers the same tiles as the ones "brightly lit" by the light source) grants a moderate accuracy malus to anything inside of it, except the caster.
 

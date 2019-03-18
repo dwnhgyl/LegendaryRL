@@ -4,7 +4,7 @@
 
 3 Valor
 
-Greatspear, Hat, Boots, Dagger
+Great Spear, Hat, Boots, Dagger
 
 Potion of Healing, Potion of Strength, Potion of Speed (all ID’d)
 
