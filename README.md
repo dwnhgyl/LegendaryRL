@@ -17,3 +17,5 @@ Open invitation link to bring interested parties together.
 **Game Website**:
 
 We will be working to make a Github Pages website when the time is appropriate.
+
+<https://epikmaowphailure.github.io/LegendaryRL/>
