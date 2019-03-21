@@ -354,3 +354,21 @@ Wargs spawn in packs of wolves and nothing else.
 Dominates wolves, fast movement, flees when hp<50%, tier 3.
 This creature is hostile to wargs. Wargs in its line of sight are slowed. This creature dominates wolves in its line of sight even if they are already dominated. Only one barghest will spawn in a level.
 “If wargs are a cruel joke of the gods, then the Barghest is the punchline. These horrid creatures have bodies only passingly dog-like, hairless and with long spines sprouting from their back, and a head more like an orc’s than anything else. They allow wargs to gather large groups of wolves together in one area, then move in with nightfall, stealing their packs and slaying them one by one. If you do not kill this creature, all the wolves in the area will soon be under its control.”
+
+
+**Elves**
+Found in: Forest, cave, ruins.
+
+While elves are never neutral to the player, by default they will not attack. They will simply follow the player, keeping sight of them. Because of their cowardly behavior, if spotted they will flee. An individual elf or pack or elves will lose cowardly and begin attacking the player if they witness one of the following things occuring:
+-The player attacking an elf or an animal
+-The player opening a treasure chest or taking an item off a pedestal
+-The player is attacked by an elf
+
+*Elven Hunter*
+Ranged attack, reload=1, ammo=10, keeps distance, stealth=3, perception=3, cowardly, emboldened by elf rules, tier 1.
+This enemy's ranged attack is 20% less likely to apply the player's armor to its damage roll than a normal attack.
+"Covered head-to-toe in natural camoflage, this figure is small and lithe like an adolescent, but it strings a bow with the sureness of a killer. While arguably more civilized than most creatures, elves hate men bitterly, and will not suffer trespassers to steal their game or their treasures. The tales all say beware! For each elf you spot, there's a dozen you don't..."
+
+*Silverpelt*
+Cowardly, fast movement, drops gold.
+"A large, four-legged beast with a thick, luxious coat of fur. The color is actually green, red, or white, depending on the season and the breed. The 'silver' refers to the coin a hunter can make by hawking even the messiest of kills. Widespread hunting by the growing throngs of humanity has seen these creatures pushed into elven lands."
