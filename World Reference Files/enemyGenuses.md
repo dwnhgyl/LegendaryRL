@@ -218,6 +218,11 @@ Armed, armored, random attack ability, shouts, tier 2.
 Armed, monologues, lunge attack, disarm attack, flees when hp<35%, immune to drowning, entanglement, and blinding, tier 2.
 “In the interest of affecting a roguish persona, this outlaw has cultivated a respectable mustache and invested in multiple gold teeth. While these things might impress frightened travelers, you’re more concerned with his rapier, which he flourishes with intimidating grace.”
 
+*Mountebank*
+Keeps distance, uses scrolls, picks up scrolls, monologues, flees when hp<50%, tier 1.
+This enemy spawns with 0-2 enemy-usable scrolls in its inventory.
+“People fear magic, and the unscrupulous sometimes use parlor tricks to pose as fearsome wizards. Their simple understanding of the arcane allows them the use of scrolls, for the purpose of demonstrating their fictional powers on any brave enough to challenge their claims. While he could easily have some very dangerous spells within the folds of his voluminous robes, you are not about to surrender your possessions to this knave.”
+
 *Spellbreaker*
 Shouts, armed, 3 random enemy spells, tier 2.
 “An escaped Strandian spellslave, as evidenced by the remains of the now shattered spellcage apparatus, which clings tenaciously to his body in ragged pieces. Free will has given him access to a greater range of powers, but with the spellcage broken his potency suffers.”
@@ -327,16 +332,10 @@ Armed, dominates outlaws, monologues, shouts, perception=1, dark vision, damaged
 “Clinging stubbornly to a semblance of life has denied this vampire supernatural strength or durability, but allowed it to bring a group of outlaws under its sway, the promise of coin delivered with a force no mortal could muster.”
 
 *Vampire Sorcerer*
-Perception=2, stealth=5, damaged by bright light, dark vision, cowardly, emboldened by 
+Perception=2, stealth=5, damaged by bright light, dark vision, cowardly, emboldened by player blind, tier 2.
+This enemy constantly emits an invisible gas that causes the spaces it occupies to be Dark. This gas also blinds the player when it occupies their space.
+"For a fresh vampire, embracing what they have become begins with embracing darkness. Such creatures carry it with them wherever they go, and will use it to hide and to hunt.
 
-**Wanderers**:
-Found in: all wilderness terrain
-The wanderers are present on most levels in a small way, as a small portion of most levels’ difficulty quota is devoted to this group. Wanderers are friendly to the pack they spawn in nothing else. Additionally, wanderers only spawn alone except where otherwise noted.
-
-*Mountebank*
-Keeps distance, uses scrolls, picks up scrolls, monologues, flees when hp<50%, tier 1.
-This enemy spawns with 0-2 enemy-usable scrolls in its inventory.
-“People fear magic, and the unscrupulous sometimes use parlor tricks to pose as fearsome wizards. Their simple understanding of the arcane allows them the use of scrolls, for the purpose of demonstrating their fictional powers on any brave enough to challenge their claims. While he could easily have some very dangerous spells within the folds of his voluminous robes, you are not about to surrender your possessions to this knave.”
 
 **Wolves**:
 Found in: forest, cave.
