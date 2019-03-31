@@ -365,9 +365,29 @@ While elves are never neutral to the player, by default they will not attack. Th
 -The player is attacked by an elf
 
 *Elven Hunter*
-Ranged attack, reload=1, ammo=10, keeps distance, stealth=3, perception=3, cowardly, emboldened by elf rules, tier 1.
-This enemy's ranged attack is 20% less likely to apply the player's armor to its damage roll than a normal attack.
+Ranged attack, reload=1, ammo=10, keeps distance, stealth=3, perception=3, cowardly, emboldened by elf rules, armed, tier 1.
+This enemy's ranged attack is 20% less likely to apply the targets's armor to its damage roll than a normal attack.
 "Covered head-to-toe in natural camoflage, this figure is small and lithe like an adolescent, but it strings a bow with the sureness of a killer. While arguably more civilized than most creatures, elves hate men bitterly, and will not suffer trespassers to steal their game or their treasures. The tales all say beware! For each elf you spot, there's a dozen you don't..."
+
+*Elven Gladeguard*
+Fast attack, cowardly, stealth=2, perception=4, emboldened by elf rules, armed, tier 2.
+This enemy's attack is 25% less likely to apply the target's armor to its damage roll.
+"The elves hold the land sacred, and from certain special places they must not give any ground, even momentarily. Gladeguards make that possible. Their bodies are honed to avoid any blow, and they wield a razor-sharp stone dagger in each hand. They show their contempt for armor by walking into battle all but naked."
+
+*Elven Beastmaster*
+Keeps distance, cowardly, stealth=3, perception=3, emboldened by elf rules, tier 2.
+This enemy always spawns with at least 1 agressive animal as part of its pack, and has a healing spell that can only heal animals.
+"Elves can tame any beast, and purportedly have found use for nearly all of them. The use this elf has for its charges almost certainly invovles disembowling adventurers. It carries only a strange, ornate pipe, which seems to make no sound and yet holds complete sway over the creatures nearby."
+
+*Elven Earthtalker*
+Keeps distance, cowardly, stealth=3, perception=5, emboldened by elf rules, tier 2.
+This enemy has a very large hearing zone, and does not lose track of the player if they are still in the hearing zone. Once emboldened, this enemy will cast an "Earthcall" spell that alerts elves (and predators) to the player's location and embolden them in a big radius.
+"The legends are clear, elf troupes often punish acts that could not possibly have been observed by eyes alone. This elf carries a treebranch staff and wears a trancelike expression. They watch you through the eyes of wilderness itself, and can call out through it to call their wrath on you. Fortunately, the bent body of this hedge witch offers no intrinsic danger."
+
+*Elven Manfeller*
+Ranged attack, reload=1, ammo=10, keeps distance, stealth=4, perception=4, cowardly, emboldened by elf rules, armed, tier 3
+This enemy's attack is 40% less likely to apply the target's armor to its damage roll.
+"All elven fighters seem to train exclusively with a single weapon, and most favor the bow. Most of these are hunters of beasts, not men. This small, camoflagued figure is one of the deadly exceptions, and can put an arrow in an armpit or eyeslit at impressive range and with shocking precision."
 
 *Silverpelt*
 Cowardly, fast movement, drops gold.
