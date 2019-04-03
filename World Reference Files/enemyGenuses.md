@@ -297,7 +297,7 @@ Strandian soldiers are all friendly to each other. Every enemy but Conscripts is
 *Conscript*
 Guards hallways, armed, armored, blocks when stationary, spear effect, panicky, tier 1.
 When conscripts are adjacent to 2 other conscripts, they gain a bonus to armor and dodge. They will attempt group up with other conscripts until they receive this bonus and then move as a group.
-“An entire continent of different cultures has been brought low beneath the countless boots of the Strandian Army. Various innovations, including standardized government issue equipment and tactics emphasizing formation fighting make them a much more effective force than any before them, and their numbers vastly outmatch any other army the continent has ever seen. Working as a unit, conscripts form a shield wall, bristling with pikes.”
+“An entire continent of different cultures has been brought low beneath the countless boots of the Strandian Army. Various innovations, including standardized government issue equipment and tactics emphasizing formation fighting make them a much more effective force than any before them, and their numbers vastly outmatch any other army the continent has ever seen, bar the dead. Working as a unit, conscripts form a shield wall, bristling with pikes.”
 
 *Champion*
 Armed, armored, blocks when stationary, disarm attack, avoids projectiles, ranged attack, reload 6, ammo=4, tier 2.
@@ -321,7 +321,7 @@ If this enemy gains 4 stacks of “corrosion” or the “sundered armor” cond
 “Strandian culture has long viewed magic as vulgar and unholy, but to forge their new empire they had to recognize its usefulness. To that end, enslaved foreigners are encased in a nightmarish restraint known as a spellcage, which dominates their minds even as it amplifies their meager magical potential. Like all slave soldiers, they pose a risk of mutiny.”
 
 **Vampires**:
-Found in: Forest, cave, ruins, tower.
+Found in: Forest, cave, ruins, swamp, tower.
 Enemies with vampire in their names will spawn as leaders of packs of enemies of factions they dominate, or else they will spawn alone. High tier vampires spawn relatively early, meaning that the total number of enemies will be few.
 
 *Vampiric Thrall*
@@ -366,7 +366,7 @@ This creature is hostile to wargs. Wargs in its line of sight are slowed. This c
 
 
 **Elves**
-Found in: Forest, cave, ruins.
+Found in: Forest, cave, swamp, ruins.
 
 While elves are never neutral to the player, by default they will not attack. They will simply follow the player, keeping sight of them. Because of their cowardly behavior, if spotted they will flee. An individual elf or pack or elves will lose cowardly and begin attacking the player if they witness one of the following things occuring:
 -The player attacking an elf or an animal
@@ -399,5 +399,15 @@ This enemy's attack is 40% less likely to apply the target's armor to its damage
 "All elven fighters train exclusively with a single weapon. Most favor the bow, but as hunters of beasts, not men. This small, camoflagued figure is one of the exceptions, and can put an arrow in an armpit or eyeslit at impressive range and with shocking precision."
 
 *Silverpelt*
-Cowardly, fast movement, drops gold.
+Cowardly, fast movement, drops gold, tier 0.
 "A large, four-legged beast with a thick, luxious coat of fur. The color is actually green, red, or white, depending on the season and the breed. The 'silver' refers to the coin a hunter can make by hawking even the messiest of kills."
+
+*Bladefang*
+Stealth=3, perception=1, tier 2.
+When this enemy moves adjacent to a target, it immediately makes an instant attack against one such target.
+"A giant cat with long, sturdy, foreward-facing tusks. Thick knots of muscle form its fore-body, which can propel its tusks through steel plate with ease, and gore a man apart with one vicious wrench."
+
+*Snaretongue*
+Stealth=1, Slow Movement, tier 2.
+This enemy uses a ranged attack that pulls the target toward it on hit. If the target would be pulled into the Snaretongue's space, it is "swallowed whole". The two share a space, the swallowed target cannot move, has certain penalities on checks, and takes automatic acid and physical damage each round. This effect typically ends when the swallowed target dies or kills the Snaretongue with melee attacks.
+"A massive but squat lizard lurks there in the underbrush. A thick, pink tongue lashes out of its gaping maw... dragging its living prey into its waiting jaws."
