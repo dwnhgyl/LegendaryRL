@@ -2,7 +2,7 @@
 
 **Orcs**:
 
-Found in: Cave, Ruins, Forest, Stronghold*, Pirate*, Town Raid*, Battlefield*
+Found in: Cave, Ruins, Swamp, Forest, Stronghold*, Pirate*, Town Raid*, Battlefield*
 Orcs spawn in packs that are friendly to each other, with one higher tier orc as the “leader”. The others will try to stay within a certain distance of their leader. By default, every orc is Neutral to all orcs not in its pack. If two leaders of different packs enter each other’s line of sight for the first time, they will gain the “Parleying” status and approach each other. Once they are a few spaces away from each other, they will spend a few rounds shouting. Then, one of 3 things will happen.
 
     1- A duel. If the Leaders are equal tier, they become hostile to each other. When one dies, the other becomes Leader of both packs. If one leader is lower tier than the other, he and his pack will instead become part of the other leader’s pack.
@@ -345,6 +345,7 @@ This enemy constantly emits an invisible gas that causes the spaces it occupies 
 *Vampire Noble*
 Armed, armored, dominates outlaws, monologues, shouts, perception=1, dark vision, damaged by bright light, tier 3.
 "Nobles are often the target of a vampire curse. Combat training, expensive weapons and armor, and artful command of men are all useful to a vampire."
+
 
 **Wolves**:
 Found in: forest, cave.
