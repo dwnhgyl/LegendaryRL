@@ -18,11 +18,11 @@ ALL orcs described here are blinded for 1-4 rounds whenever they receive lighten
 *When orcs spawn as the main genus in these environments, fewer orcs will spawn and they will all be friendly to each other. When they are a side genus, they spawn as normal.
 
 *Orc Runt*
-Shouts, Armed, Keeps distance (unless other orcs hostile), Guards Hallways, panicky, dark vision, light blindness, tier 0.
+Shouts, Armed, Keeps distance (unless other orcs hostile), Guards Hallways, panicky, dark vision, light blindness, reckless, tier 0.
  “A dwarfed and stunted specimen, standing waist-high, and as cowardly as it is vicious. It will not face you alone, unless it is cornered, though it will try to scout for its pack.”
 
 *Common Orc*
-Shouts, Armed, Armored, Guards Hallways, panicky, dark vision, light blindness, tier 1.
+Shouts, Armed, Armored, Guards Hallways, panicky, dark vision, light blindness, reckless, tier 1.
 “Resembling a large, ugly ape in battered, scavenged armor and wielding crude weaponry, this creature’s head comes almost to your chest. It is little more than a clever predator, possessing only rudimentary language, though it can see in the dark.”
 
 *Orc Bowman*
@@ -30,8 +30,7 @@ Keeps Distance, Armed, Ranged attack, reload=1, tier 1, dark vision, ammo=12 pan
 “A particularly stunted orc who compensates with cleverness. It has learned to use a bow, and does so at the slightest opportunity.”
 
 *Orc Alpha*
-Armed, Armored, dark vision, light blindness, tier 2.
-Orc Alphas only spawn as leaders of lower tier orc packs. Orc alphas spawn holding a melee weapon, and have a weapon effect depending on the weapon’s type.
+Armed, Armored, dark vision, light blindness, reckless, tier 2.
 “This orc is larger than its kin, and while still possessing gangly, ape-like proportions, its posture is straight, and proud. It is fearless, stands head-height to your chin, and has taken the best looted weapons and armor for itself. Its face is bestial, but not so misshapen as other orcs’.”
 
 *Orc Priest*
@@ -56,6 +55,15 @@ Armed, Armored, ranged attack, reload 4, ammo=10, Keeps distance, dark vision, l
 Armed, Armored, dark vision, light sensitivity, tier 3.
 The orc captain only spawns as a leader of lower-tier orcs.
 “This orc’s man-like proportions and posture see it loom above lesser orcs. Its strength and skill at arms dwarfs theirs, and likely yours as well.”
+
+*Orc Berserker*
+Armed, fast attack, dark vision, light blindness, reckless, relentless, tier 3.
+This enemy gains beserk stacks much like the player feat "Berserker".
+"Wild-eyed and snarling, this orc flings itself at prey with reckless abandon that makes other orcs seem tame. Nigh twenty stone of orcish muscle powered by a deep well of orcish bloodlust."
+
+*Giant Orc*
+Armed, Armored, dark vision, light blindness, Slow movement, Slow attack, reckless, relentless, tier 3.
+"This orc must weigh at least fifty stone. It effortlessly carries a tree-trunk club and armor improvised from broadshields and rope."
 
 **Kobolds**:
 
@@ -118,8 +126,6 @@ This enemy spawns carrying 2 random potions, and 1 “flask of acid” potion.
 *Female Kobold* Immobile.
 This enemy spawns in small vaults inside kobold dens as scenery/quest objective.
 “Resembling an engorged brown alligator, it doesn’t look like this kobold female has ever left the den it was spawned in. There’s no telling if it’s intelligent; it doesn’t seem the kobolds bothered to teach it language.”
-
-**Drakes, Wyverns, Dragons, Etc**:
 
 *Red Drake*
 Immune: fire, flying, avoids hovering over hazards, extra spawn weight (climate: hot), tier 3.
@@ -334,8 +340,11 @@ Armed, dominates outlaws, monologues, shouts, perception=1, dark vision, damaged
 *Vampire Sorcerer*
 Perception=2, stealth=5, damaged by bright light, dark vision, cowardly, emboldened by player blind, tier 2.
 This enemy constantly emits an invisible gas that causes the spaces it occupies to be Dark. This gas also blinds the player when it occupies their space.
-"For a fresh vampire, embracing what they have become begins with embracing darkness. Such creatures carry it with them wherever they go, and will use it to hide and to hunt.
+"For a fresh vampire, embracing what they have become begins with embracing darkness. Such creatures carry it with them wherever they go, and will use it to hide and to hunt."
 
+*Vampire Noble*
+Armed, armored, dominates outlaws, monologues, shouts, perception=1, dark vision, damaged by bright light, tier 3.
+"Nobles are often the target of a vampire curse. Combat training, expensive weapons and armor, and artful command of men are all useful to a vampire."
 
 **Wolves**:
 Found in: forest, cave.
@@ -367,12 +376,12 @@ While elves are never neutral to the player, by default they will not attack. Th
 *Elven Hunter*
 Ranged attack, reload=1, ammo=10, keeps distance, stealth=3, perception=3, cowardly, emboldened by elf rules, armed, tier 1.
 This enemy's ranged attack is 20% less likely to apply the targets's armor to its damage roll than a normal attack.
-"Covered head-to-toe in natural camoflage, this figure is small and lithe like an adolescent, but it strings a bow with the sureness of a killer. While arguably more civilized than most creatures, elves hate men bitterly, and will not suffer trespassers to steal their game or their treasures. The tales all say beware! For each elf you spot, there's a dozen you don't..."
+"Covered head-to-toe in natural camoflage, this figure is small and lithe like an adolescent, but it strings a bow with the sureness of a killer. Elves hate men bitterly, and will not suffer trespassers to steal their game or their treasures. Say the tales: For each elf you spot, there's a dozen you don't..."
 
 *Elven Gladeguard*
 Fast attack, cowardly, stealth=2, perception=4, emboldened by elf rules, armed, tier 2.
 This enemy's attack is 25% less likely to apply the target's armor to its damage roll.
-"The elves hold the land sacred, and from certain special places they must not give any ground, even momentarily. Gladeguards make that possible. Their bodies are honed to avoid any blow, and they wield a razor-sharp stone dagger in each hand. They show their contempt for armor by walking into battle all but naked."
+"The elves hold the land sacred, and from certain special places they must not give any ground, even momentarily. Gladeguards make that possible. Agile enough to avoid any blow, and they wield a razor-sharp stone dagger in each hand. They show their contempt for armor by walking into battle all but naked."
 
 *Elven Beastmaster*
 Keeps distance, cowardly, stealth=3, perception=3, emboldened by elf rules, tier 2.
@@ -387,8 +396,8 @@ This enemy has a very large hearing zone, and does not lose track of the player 
 *Elven Manfeller*
 Ranged attack, reload=1, ammo=10, keeps distance, stealth=4, perception=4, cowardly, emboldened by elf rules, armed, tier 3
 This enemy's attack is 40% less likely to apply the target's armor to its damage roll.
-"All elven fighters seem to train exclusively with a single weapon, and most favor the bow. Most of these are hunters of beasts, not men. This small, camoflagued figure is one of the deadly exceptions, and can put an arrow in an armpit or eyeslit at impressive range and with shocking precision."
+"All elven fighters train exclusively with a single weapon. Most favor the bow, but as hunters of beasts, not men. This small, camoflagued figure is one of the exceptions, and can put an arrow in an armpit or eyeslit at impressive range and with shocking precision."
 
 *Silverpelt*
 Cowardly, fast movement, drops gold.
-"A large, four-legged beast with a thick, luxious coat of fur. The color is actually green, red, or white, depending on the season and the breed. The 'silver' refers to the coin a hunter can make by hawking even the messiest of kills. Widespread hunting by the growing throngs of humanity has seen these creatures pushed into elven lands."
+"A large, four-legged beast with a thick, luxious coat of fur. The color is actually green, red, or white, depending on the season and the breed. The 'silver' refers to the coin a hunter can make by hawking even the messiest of kills."
