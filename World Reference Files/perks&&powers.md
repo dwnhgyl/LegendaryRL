@@ -14,6 +14,10 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Chilling Coalescence**: 5 turns. All enemies in a small aoe suffer the "coalescence" debuff for a short time, taking light cold damage and suffering slow movement for the duration. Empty tiles within the aoe have a 20% chance of becoming ice block walls for the duration of the spell.
 
+**Conjure Explosive**: 6 turns. Target an empty space in sight. A "magic bomb" is spawned there. On its turn, the bomb has a 10% chance to explode if the player is still in its blast radius. If the player is not, it has a 50% chance to explode. When it does explode, it deals large physical and fire damage in a big AOE around it. The bomb has moderate hide and sneak (not modified by spell power) and a small pool of HP. If they spot it, Relentless and Ranged enemies will attack it, and all other enemies will flee it. If destroyed, the bomb immediately detonates, but with half its spell power effect.
+
+**Earthwall**: 4 turns. The player is prompted to select a number of continuous spaces. "Stone Pillars" immediately spawn in these spaces, functioning as walls. Enemies standing in one of these spaces take light physical damage and are moved to one of the nearest empty spaces. The stone pillars remain for a moderate duration. This spell comes with a special spell, "Dispel Pillar", that takes 1 turn to cast and removes a target pillar.
+
 **Fireball**: 3 turns. Shoots a projectile which, upon hitting an enemy, a wall, or the targeted space, deals moderate fire damage in a moderate aoe. Notably, damage dropoff only reaches half damage at the edge of the radius, unlike other aoe damage effects. The projectile has a speed of 4 spaces per round. Fireball deals (60-Spellpower)% damage to the caster.
 
 **Lightning Bolt**: 3 turns. Shoots an instantaneous projectile which can travel through any number of enemy spaces, dealing moderate lightning damage to each enemy it passes through.
@@ -25,6 +29,8 @@ The effects that spells have scale with spell power, a hidden stat determined by
 **Chilling Grip**: 2 turns. Targeted enemy in sight immediately takes light cold damage, ignoring armor.
 
 **Conjure Ammunition**: 7 turns. Spawns a full quiver of a type of ammo corresponding to an equipped ranged weapon (if no ammo is equipped, spawns a Belt of Knives). This ammo will have a small enhancement bonus determined by spellpower. This object is temporary and will disappear between levels.
+
+**Premonition**: 6 turns. When cast, the game remembers the complete state of the level that instant. Play continues normally for a short duration, except that the player has a un-removable "premonition" buff for a short duration. When the buff expires or the player dies, the game returns to the state when premonition was cast.
 
 **Wind Step**: 4 turns. Causes targeted creature (including the player) to gain the Wind Step buff for a short duration. This buff makes movement instant on a 2 turn cooldown, grants Flight, and grants a moderate dodge bonus.
 
@@ -38,7 +44,7 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Shardspray**: 3 turns. This spell creates a scaling number of projectiles that immediately fire off in random directions. If cast on the floor, these can be in any of 16 directions (the 8 movement directions, plus 1 in between each of them). If cast on a wall, adjacent walls will prevent shards from firing in their direction, resulting in a more concentrated burst of shards. Each shard deals light physical damage and has high accuracy. These projectiles go through the player without triggering any effects. With this spell, the projectiles originate adjacent to the space targeted, and thus an enemy on a targetted floor space will be undamaged.
 
-**Lava Fissure**: 5 turns. Targetted space in short range, no los required. A small area around the targetted space becomes highly dangerous "spell-lava" terrain. This terrain is identical to lava, except that all damage it causes scales with spellpower and is reduced by 90% when applied to the player.
+**Lava Fissure**: 5 turns. Targetted space in short range, no los required. A small area around the targetted space becomes highly dangerous "spell-lava" terrain. This terrain is identical to lava, except that all damage it causes scales with spellpower and is reduced by (70+Spellpower)% when applied to the player.
 
 **Bless Equipment**: 10 turns. Applies a “blessed” trait to a piece of equipment, increasing its effective enhancement bonus by a figure that scales with spellpower. This trait is removed when the spell is cast again, and between levels. (Enemies who use a scroll of bless equipment gain a permanent attack buff, and lose “keeps distance”)
 
@@ -63,6 +69,8 @@ The effects that spells have scale with spell power, a hidden stat determined by
 **Assassinate**: Unlocks a critical strike option with a +200% damage multiplier. If the enemy dies, their death does not make any extra noise (same sneak/hide malus as moving). If the attack deals sneak attack damage (such as against an unaware target) that damage is tripled as well.
 
 **Camoflage**: At the start of each mission, a number of "camoflage" items spawn on the floor of the level. Upon pick-up, these items disappear and grant you a small bonus to hide that will last until you leave the level. The number of camoflage items in a level depends on your Cunning.
+
+**Misdirection**: Enemies who become alerted but are NOT aware of the player's true location receive the "Distracted" debuff, lowering their sight and hearing scores by a significant amount.
 
 **Poisoncraft**: Damage dealt to enemies that is caused by the effects of coating a weapon with a potion is increased by a figure that scales with your Cunning. 1 extra Potion of Poison is spawned on the floor of every mission.
 
@@ -89,7 +97,7 @@ The effects that spells have scale with spell power, a hidden stat determined by
 ## *Feats*
 **Charge**: When moving while sprinting, you gain stacks of a buff which increases the damage modifier of the next melee attack you make. An attack benefiting from any number of these stacks increases its Cleave value by 1. You can accrue a number of these stacks up to your Valor. While fatigued, you do not take penalties to your combat stats.
 
-**Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 4 plus the enemy's tier, times the enemy's tier. So for tiers 1, 2, and 3, that's 5, 12, and 21.
+**Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 4 plus the enemy's tier, times the enemy's tier, plus 1. So for tiers 0, 1, 2, and 3, that's 1, 6, 13, and 22.
 
 **Berserk**: When you make a “Reckless” attack, any critical attack except “Cautious”, or spend a turn bonestuck, you gain a stack of the “Berserk” buff that grants small bonuses to dodge and armor and large bonuses to melee damage and accuracy. You can accrue a number of berserk stacks equal to your Valor. Stacks are lost at a rate of 1 each round you do not gain a stack.
 
@@ -112,3 +120,5 @@ The effects that spells have scale with spell power, a hidden stat determined by
 **Bastion Stance**: Activate and deactivate from the special abilities menu. Gain “Strafe”, become unable to parry or dodge (guard is not down), and gain extra armor proportional to your parry bonus to all melee and ranged attacks that originate from enemies in front of you (180 degrees). While this feat is active, you have a single-width line blindspot in the middle of your vision field.
 
 **Point Blank**: Guard is not dropped when reloading or firing a ranged weapon. Ranged attacks targeting spaces within 5 spaces receive a small accuracy and damage multiplier bonus that scales with valor.
+
+**Grit**: At the start of each turn, heal 1 HP unless your current HP is a multiple of 10.
