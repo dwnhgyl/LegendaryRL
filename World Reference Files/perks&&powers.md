@@ -32,6 +32,8 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Premonition**: 6 turns. When cast, the game remembers the complete state of the level that instant. Play continues normally for a short duration, except that the player has a un-removable "premonition" buff for a short duration. When the buff expires or the player dies, the game returns to the state when premonition was cast.
 
+**Static Charge**: 5 turns. Applies a buff to the caster for a short duration. Each turn, an enemy within a short range will be targeted by a highly accurate instantaneous projectile that deals light lighting damage.
+
 **Wind Step**: 4 turns. Causes targeted creature (including the player) to gain the Wind Step buff for a short duration. This buff makes movement instant on a 2 turn cooldown, grants Flight, and grants a moderate dodge bonus.
 
 **Cold Wind**: 5 turns. The player is prompted to target a space, and then set a direction. A special effect fills a moderate-size, roughly rectangular area. Enemies within this effect take light cold damage and are knocked back a very short distance in the direction that was set. The player is unaffected.
@@ -64,11 +66,16 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Read Magic**: 2 turns. Once cast, the player is prompted to choose a scroll or scribe’s scraps from their inventory. If an unidentified scroll is chosen, that scroll is identified. If an identified scroll is chosen, the player begins to cast that spell as if from their spell list without consuming the scroll (this is cast at 75% normal spellpower). If scribe’s scraps are chosen, the player is prompted to turn it into one of three scrolls (taken from the list of identified scrolls).
 
+
 ## *Tricks*
 
 **Assassinate**: Unlocks a critical strike option with a +200% damage multiplier. If the enemy dies, their death does not make any extra noise (same sneak/hide malus as moving). If the attack deals sneak attack damage (such as against an unaware target) that damage is tripled as well.
 
 **Camoflage**: At the start of each mission, a number of "camoflage" items spawn on the floor of the level. Upon pick-up, these items disappear and grant you a small bonus to hide that will last until you leave the level. The number of camoflage items in a level depends on your Cunning.
+
+**Crowd Cover**: If an enemy is aware of hostiles besides the player, it will ignore the player to attack them, even if the player is closer.
+
+**Healer's Art**: Activated from the special abilities menu. Causes the player to wait for 30 turns, and then heals the player HP equal to 20 times their Cunning. Usable once per mission.
 
 **Misdirection**: Enemies who become alerted but are NOT aware of the player's true location receive the "Distracted" debuff, lowering their sight and hearing scores by a significant amount.
 
@@ -94,8 +101,11 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **River’s Current**: The base speed bonus from sprinting is increased (20->30). Sprinting is not unstealthy (Same hide/sneak malus as normal movement). Sprinting grants a dodge bonus for its duration. You suffer only 3 stacks of fatigue for each 5 rounds spent sprinting.
 
+
 ## *Feats*
 **Charge**: When moving while sprinting, you gain stacks of a buff which increases the damage modifier of the next melee attack you make. An attack benefiting from any number of these stacks increases its Cleave value by 1. You can accrue a number of these stacks up to your Valor. While fatigued, you do not take penalties to your combat stats.
+
+**Disarm**: Unlocks a normal attack and a critical attack. The normal attack has a 20% damage modifier, but applies the "Disarmed" debuff to any armed enemy it hits. The critical attack has a 100% damage modifier, and applies the "Severed Arm" debuff to enemies it hits.
 
 **Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 4 plus the enemy's tier, times the enemy's tier, plus 1. So for tiers 0, 1, 2, and 3, that's 1, 6, 13, and 22.
 
