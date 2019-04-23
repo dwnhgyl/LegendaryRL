@@ -139,9 +139,15 @@ Very good damage, fair accuracy, fair parry, slow attack, unparry-able, Enc=3.
 
 **Greatmace**
 
-Exceptional damage, fair accuracy, fair parry, slow attack, unparry-able, Enc=6.
+Exceptional damage, fair accuracy, fair parry, slow attack, unparry-able, 2-hander, Enc=6.
 
     “A towering mass of steel and lead, this weapon would look impractical to most denizens of the Strandian continent. It was almost certainly forged in your homeland, for the use of adventurers like yourself. More than one hero of legend has borne the weight of such a weapon through rivers and across mountains, in order to slay monstrous opponents no other weapon could harm.”
+    
+**Hookblade**
+Fair damage, poor accuracy, fair parry, push-on-hit, Enc=2
+When this weapon hits, the player can push the enemy (or corpse) one space in any direction.
+    
+    "A slender metal shaft ends in a hook with a pyramidal point. Hookblades are scoffed at by many master duelists for being difficult for a warrior to use to full effect, there is a school of thought that prizes them as an invaluable positioning tool."
 
 **Buckler**
 
@@ -153,7 +159,7 @@ When holding a buckler, you can use items instantly and throw unequipped weapons
 
 **Shield**
 
-Good damage, terrible accuracy, great parry, Enc=4
+Good damage, terrible accuracy, great parry, ranged parry, Enc=4
 
 (when wielded, grants a special "Ranged Parry" bonus, that allows you make a special parry roll against any missile attacks that you wouldn't otherwise be able to parry. You still need to be facing the missile. Only "ranged parry" weapons add their bonus to such parry attempts)
 
@@ -161,13 +167,28 @@ Good damage, terrible accuracy, great parry, Enc=4
 
 **Greatshield**
 
-Fair damage, terrible accuracy, phenomenal parry, Enc=6
+Fair damage, terrible accuracy, phenomenal parry, ranged parry, Enc=6
 
 (when wielded, grants a special "Ranged Parry" bonus, that allows you make a special parry roll against any missile attacks that you wouldn't otherwise be able to parry. You still need to be facing the missile. Only "ranged parry" weapons add their bonus to such parry attempts)
     
     “Standard-issue for Strandian infantry, not just as personal equipment, but for reinforcing siege equipment, walls, and officer tents as well! This shield is so large it can guard your thighs and your face at the same time. Not easy to carry or fight with, but gives you a welcome advantage in a melee.”
     
+**Ward**
+
+Weak damage, poor accuracy, fair parry, ranged parry, Enc=1
+While channeling a spell while a ward is held, the player does not lower their guard, gains a parry bonus from wisdom, but loses any parry bonus from valor.
+
+    "This small icon of the god of men fits snugly in a clenched fist. Practitioners of magic can protect themselves from harm by brandishing such a symbol as they channel the power of the world around them."
+
+**Staff**
+
+Fair damage, fair accuracy, fair parry, 2-hander Enc=3
+Holding this weapon lowers the channeling time on all spells by 1, to a minimum of 1.
+    
+    "The staff is a symbol of the man-god's power, representing how the world around it may be bent to its will with craft and cunning. Mortal mages imitate this in their own works, and indeed, it is well known that brandishing a staff makes it much easier to cast any spell."
+
 **Alchemical Torch**
+
 Light damage, good accuracy, poor parry, throwmalus=2 Enc=2
 All damage dealth with this weapon is fire damage. Whenever this weapon is equipped or on the ground, it emits a 1 space radius of high priority bright light and a 6 space radius of high priority dim light. An equipped torch gives the player a serious malus to Hide.
 
