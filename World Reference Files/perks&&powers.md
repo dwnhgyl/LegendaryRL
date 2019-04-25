@@ -112,6 +112,8 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Disarm**: Unlocks a normal attack and a critical attack. The normal attack has a 20% damage modifier, but applies the "Disarmed" debuff to any armed enemy it hits. The critical attack has a 100% damage modifier, and applies the "Severed Arm" debuff to enemies it hits.
 
+**Discretion**: Valor now lowers effective encumberance for all penalties, including stealth and speed penalties.
+
 **Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 4 plus the enemy's tier, times the enemy's tier, plus 1. So for tiers 0, 1, 2, and 3, that's 1, 6, 13, and 22.
 
 **Berserk**: When you make a “Reckless” attack, any critical attack except “Cautious”, or spend a turn bonestuck, you gain a stack of the “Berserk” buff that grants small bonuses to dodge and armor and large bonuses to melee damage and accuracy. You can accrue a number of berserk stacks equal to your Valor. Stacks are lost at a rate of 1 each round you do not gain a stack.
