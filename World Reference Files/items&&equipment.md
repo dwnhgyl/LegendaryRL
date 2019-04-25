@@ -216,14 +216,14 @@ Fair damage, fair accuracy, quiver=10, reload=1, projectile speed=10, Enc=2.
 
 **Light Crossbow**
 
-Good damage, good accuracy, quiver=10, reload=3, projectile speed=10, Enc=2
+Good damage, good accuracy, quiver=8, reload=3, projectile speed=10, Enc=2
 Light Crossbows can be used one-handed, but suffer an accuracy penalty in this case. They take 5 rounds to reload without an empty off-hand.
 
     “The design of this crossbow emphasizes portability, economy, and usability. It is a little too heavy to be easily used in one hand. This hasn’t stopped thugs, pirates, and adventurers from brandishing two at a time for deadly close-range ambushes.”
 
 **Heavy Crossbow**
 
-Very good damage, good accuracy, quiver=10, reload=4, projectile speed=10, Enc=4.
+Very good damage, good accuracy, quiver=8, reload=4, projectile speed=10, Enc=4.
 
     “These weapons are often found in the possession of mercenaries; they are effective tools of war, but too expensive to fill out the ranks of the Strandian archer regiments. Too new a weapon to have much of a place in the legends, these bulky hunks of wood and steel are sure to gain one thanks to their ease of use and sheer killing power. Despite how cumbersome they are, they are still effective ambush weapons.”
 
@@ -232,8 +232,31 @@ Very good damage, good accuracy, quiver=10, reload=4, projectile speed=10, Enc=4
 Fair damage, poor accuracy, thrown only, projectile speed=5, Enc=NA
 Throwing knives are not equipment, but can be thrown when a “Brace of Knives” is equipped. Their listing is here for consistency.
 
-**Extra Quivers**
+## **Extra Quivers**
+Ranged weapons have ammunition stores "attached" to them, from which they are reloaded. But you can find and buy extra quivers, which will potentially let you get more use out of a ranged weapon. Enchanted quivers apply an attack buff to the accuracy and damage of weapons loaded with one of their ammo, and also have larger quiver values. The Brace of Knives works a little differently... a character with the item equipped can access throwing knives from the throw menu. Each time a knife is thrown, the brace of knives loses 1 ammo. An enchanted Brace of Knives yields knives with an enhancement bonus to their weapon profile.
 
+**Brace of Knives**
+quiver=6, Enc=1
+
+    "Sharp little knives all in a row, perfectly weighted to be flung like darts into something unfriendly."
+
+**Case of Bolts**
+quiver=8, Enc=1
+This quiver can reload Light Crossbows and Heavy Crossbows.
+    
+    "A metal case containing short darts meant to be shot from a crossbow."
+
+**Quiver of Arrows**
+quiver=10, Enc=1
+This quiver can reload Bows.
+
+    "A leather holster with a long strap. The feathers of arrows stick out of the top, waiting to be taken."
+
+**Bag of Bullets**
+quiver=8, Enc=1
+This quiver can reload slings.
+
+    "A bag of round leaden sling shot. Better than rocks, and closer at hand."
 
 ## *Body Armor*
 
