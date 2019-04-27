@@ -3,6 +3,7 @@
 **Orcs**:
 
 Found in: Cave, Ruins, Swamp, Forest, Stronghold*, Pirate*, Town Raid*, Battlefield*
+
 Orcs spawn in packs that are friendly to each other, with one higher tier orc as the “leader”. The others will try to stay within a certain distance of their leader. By default, every orc is Neutral to all orcs not in its pack. If two leaders of different packs enter each other’s line of sight for the first time, they will gain the “Parleying” status and approach each other. Once they are a few spaces away from each other, they will spend a few rounds shouting. Then, one of 3 things will happen.
 
     1- A duel. If the Leaders are equal tier, they become hostile to each other. When one dies, the other becomes Leader of both packs. If one leader is lower tier than the other, he and his pack will instead become part of the other leader’s pack.
@@ -20,7 +21,8 @@ ALL orcs described here are blinded for 1-4 rounds whenever they receive lighten
 *Orc Runt*
 
 Shouts, Armed, Keeps distance (unless other orcs hostile), Guards Hallways, panicky, dark vision, light blindness, reckless, tier 0.
- “A dwarfed and stunted specimen, standing waist-high, and as cowardly as it is vicious. It will not face you alone, unless it is cornered, though it will try to scout for its pack.”
+
+    “A dwarfed and stunted specimen, standing waist-high, and as cowardly as it is vicious. It will not face you alone, unless it is cornered, though it will try to scout for its pack.”
 
 *Common Orc*
 
@@ -43,6 +45,7 @@ Armed, Armored, dark vision, light blindness, reckless, tier 2.
 *Orc Smith*
 
 Armed, Armored, dark vision, light blindness, reckless, collects weapons and armor, tier 2.
+
 This enemy gains an attack bonus for each weapon in their inventory, and an armor bonus for each piece of armor in their inventory.
 
     "This cunning creature has inherited the advanced technological secrets brought by its ancestors when they invaded centuries ago. It is scrounging this area for equipment to incorporate into its personal arsenal."
@@ -50,6 +53,7 @@ This enemy gains an attack bonus for each weapon in their inventory, and an armo
 *Orc Priest*
 
 Keeps Distance, Shouts, Armed, Armored, dark vision, light sensitivity, tier 2, Perception=1.
+
 Only spawns as the leader of a lower-tier pack. If it reaches the “Duel” result during parley with a leader who is not an Orc Priest, that orc and its pack immediately join the Orc Priest’s band, as if it were a lower tier orc. Orcs in its line of sight act as if they had “Relentless” and no other special behaviors.
 
     “Judging by its dress, this is an emissary from the orcish homeland, preaching the pointless faith of the orcs’ dead god to the mongrel barbarians. Religion will almost certainly give his followers courage, but likely not wisdom. These orc-priests are famous for leading their packs into traps.”
@@ -57,6 +61,7 @@ Only spawns as the leader of a lower-tier pack. If it reaches the “Duel” res
 *Orc Brute*
 
 Relentless, Slow movement, Slow attack, dark vision, light blindness, tier 2.
+
 When spawned as a leader of an orc pack in an Orc level, it has a 50% chance to be the only one in its pack.
 
     “Hulking and powerful, but cripplingly malformed, bulbous muscle spasms grotesquely under this monster’s black hide. Legends attribute the origin of these massive orcs to everything from interbreeding with trolls to the consequence of cannibalism.”
@@ -76,6 +81,7 @@ Armed, Armored, ranged attack, reload 4, ammo=10, Keeps distance, dark vision, l
 *Orc Captain*
 
 Armed, Armored, dark vision, light sensitivity, tier 3.
+
 The orc captain only spawns as a leader of lower-tier orcs.
 
     “This orc’s man-like proportions and posture see it loom above lesser orcs. Its strength and skill at arms dwarfs theirs, and likely yours as well.”
@@ -83,6 +89,7 @@ The orc captain only spawns as a leader of lower-tier orcs.
 *Orc Berserker*
 
 Armed, fast attack, dark vision, light blindness, reckless, relentless, tier 3.
+
 This enemy gains beserk stacks much like the player feat "Berserker".
 
     "Wild-eyed and snarling, this orc flings itself at prey with reckless abandon that makes other orcs seem tame. Nigh twenty stone of orcish muscle powered by a deep well of orcish bloodlust."
@@ -101,6 +108,7 @@ All kobolds on a level will always be friendly to each other, though they spawn 
 *Kobold*
 
 Armed, stealth=1, avoids traps, shouts, guards hallways, tier 0.
+
 Spawn rate heavily favors large groups of these basic kobolds over stronger mobs.
 
     “Standing knee-high and armed with a primitive spear, these bipedal reptilian savages live in burrows filled with traps.”
@@ -114,6 +122,7 @@ Armed, reach, avoids traps, res: fire, shouts, guards hallways, extra spawn weig
 *Black Kobold*
 
 Armed, stealth=3, perception=1, avoids traps, flees when spotted, aquatic, extra spawn weight (terrain: swamp), tier 1.
+
 When this stealth enemy successfully sneak attacks the player, it does triple damage instead of double.
 
     “Slinking low with a vicious stone dagger in its jaws, this black kobold skulks around, hoping to ambush you.”
@@ -127,6 +136,7 @@ Relentless, cleave=4, friendly fire, res: cold, repulsive, extra spawn weight (c
 *Blue Kobold*
 
 Armed, stealth=1, res: lightning, ranged attack, reload=1, keeps distance, lures for traps, tier 1.
+
 When this enemy spawns, two extra traps spawn within the kobold den terrain.
 
     “This kobold carries equipment seemingly intended for building or crafting, and hurls stones at you with a crude sling.”
@@ -134,6 +144,7 @@ When this enemy spawns, two extra traps spawn within the kobold den terrain.
 *Green Kobold*
 
 Keeps distance, res: acid, stealth=1, avoids traps, throws potions, drinks potions, picks up potions, tier 1.
+
 This enemy spawns carrying 1 random potion.
 
     “This strange green kobold scurries around collecting herbs, insects, and the filth of its brethren. It covets alchemical potions greatly, and will use them to defend itself.”
@@ -141,6 +152,7 @@ This enemy spawns carrying 1 random potion.
 *Kobold Warlord*
 
 Armed, Armored, spear effect, immune: fire, avoids traps, guards hallways, call to arms, extra spawn weight (climate: hot, terrain: stronghold), tier 2.
+
 This enemy casts firebolt after channeling for 5 turns, which it does whenever it has no path to the player or it sees the player from very far away.
 
     “Lean and agile, this kobold stands even with your chest. Bright red scales shine through the gaps between pillaged armor, large horns jut from under its helmet, and fire dribbles from its jaw as it looses a warcry.”
@@ -148,6 +160,7 @@ This enemy casts firebolt after channeling for 5 turns, which it does whenever i
 *Kobold Assassin*
 
 Armed, stealth=5, perception=1, poison attack, avoids traps, flees when spotted, emboldened by: player poisoned, aquatic, extra spawn weight (terrain: swamp), tier 2.
+
 When this stealth enemy successfully sneak attacks the player, it deals triple damage (instead of double like most enemies) and applies extra poison damage.
 
     “Slithering like a shadow through the underbrush on all fours, black spikes growing menacingly from its joints and skull. This creature drools vicious clear venom from its wicked jaws onto an iron stiletto as it draws it.”
@@ -161,6 +174,7 @@ Relentless, immune: cold, emits Frost Gas in low volume, cleave=4, friendly fire
 *Kobold Engineer*
 
 Armed, stealth=2, immune: lightning, perception=2, keeps distance, lures to traps, ranged attack, reload=3, tier 2.
+
 When this enemy spawns, 5 extra traps spawn within the kobold den terrain.
 This enemy casts the enemy spell “Charge Attack” after channeling for 5 rounds, and does so whenever it is unaware of the player or has lost line of sight.
 
@@ -169,11 +183,14 @@ This enemy casts the enemy spell “Charge Attack” after channeling for 5 roun
 *Kobold Alchemist*
 
 Stealth=2, immune: acid, keeps distance, uses potions, picks up potions, avoids traps, tier 2.
+
 This enemy spawns carrying 2 random potions, and 1 “flask of acid” potion.
 
     “Its scales a brilliant hue of green, this kobold carries a bandolier of crude canteens. It obsesses over them, sniffing each one before thoughtfully adding a glob of its acidic saliva.”
 
-*Female Kobold* Immobile.
+*Female Kobold*
+
+Immobile.
 
 This enemy spawns in small vaults inside kobold dens as scenery/quest objective.
 
@@ -182,6 +199,7 @@ This enemy spawns in small vaults inside kobold dens as scenery/quest objective.
 *Red Drake*
 
 Immune: fire, flying, avoids hovering over hazards, extra spawn weight (climate: hot), tier 3.
+
 This enemy can cast firebolt after channeling for 4 turns, which it does whenever it has no path to the player or it sees the player from very far away.
 
     “Proportioned like a lion, and as tall as a horse, adolescent red dragons are terrifyingly agile for a creature so strong. And then of course, there’s the fire.”
@@ -195,6 +213,7 @@ Immune: ice, relentless, cleave=4, friendly fire, emits Frost Gas in large volum
 *Blue Drake*
 
 Immune: lightning, no melee, perception=3 flying, lures for traps, keeps distance, avoids bad gasses, tries to hover over hazards, tier 3.
+
 This enemy can cast lightning bolt after channeling for 3 rounds, which it does whenever it has line of sight and isn’t fleeing. However, it will not do so when surrounded by any flammable gas.
 Whenever this enemy spawns, a premade vault from the “blue drake” list is placed (within the kobold den if it exists), and the blue drake spawns inside of it.
 
@@ -209,6 +228,7 @@ Aquatic, stealth=4, flees when spotted, emboldened by: player poisoned, extra sp
 *Green Drake*
 
 Immune: acid, flying, avoids traps, keeps distance, Stealth=1, Perception=1, tier 3.
+
 This enemy can cast Acid Bolt after channeling for 4 rounds, which is its main form of attack. It can also cast Emit Acid Gas after channeling for 3 rounds, which it does once the player draws near.
 
     “The lizard-like proportions look odd, even comical on a creature larger than you are. The way it hurls great blobs of acid while hiding behind acidic vapors is less funny. At least it doesn’t have a throwing arm.”
@@ -216,6 +236,7 @@ This enemy can cast Acid Bolt after channeling for 4 rounds, which is its main f
 *Red Wyrm*
 
 Immune: fire, flying, avoids hovering over hazards, extra spawn weight (climate: hot), breaks walls, massive, tier 4.
+
 This enemy can cast Cone of Fire after channeling for 4 rounds, and does so whenever it sees the player from very far away or is unable to approach. It ignores basic Kobolds, but will not channel if advanced kobolds are in the way.
 
     “With limbs like tree trunks and the power to destroy a town by breathing, it’s little wonder that kobolds revere red dragons as gods of war.”
@@ -229,6 +250,7 @@ Immune: ice, relentless, cleave=5, friendly fire, emits Frost Gas in absurd volu
 *Blue Wyrm*
 
 Immune: lightning, perception=4, flying, lures for traps, keeps distance, avoids bad gasses, tries to hover over hazards, avoids projectiles, tier 4.
+
 Whenever this enemy spawns, a premade vault from the “blue wyrm” list is placed (within the kobold den if it exists), and the blue wyrm spawns inside of it.
 This enemy can cast “lightning bolt” after channeling for 2 rounds, which it will do whenever it isn’t retreating. It will only use melee if cornered.
 
@@ -243,6 +265,7 @@ Aquatic, stealth=3, extra spawn weight (terrain: swamp), poison attack, percepti
 *Green Wyrm*
 
 Immune: acid, flying, avoids traps, massive, emits acid vapor in low volume, Perception=2, tier 4.
+
 This enemy can cast “acid bolt” after channeling for 3 rounds, and does so at long range. It can also cast “acid splash” after channeling for 3 rounds, which it does as long as it is within range to and the player is not adjacent.
 
     “This absurd creature has great bulbous body, massive wings, and a great long neck, all the better for hocking deadly loogies at anyone unfortunate enough to draw its ire. Kobolds revere these creatures as gods. Probably gods of good table manners.”
@@ -256,6 +279,7 @@ All army of the dead units are friendly to each other.
 *Wretch*
 
 Armed, shouts, guards hallways, tier 1.
+
 This enemy, and all other wretches in its pack, loses the guards hallways behavior and gains the relentless behavior whenever it is hit with a ranged attack, or it has line of sight to the player for 15 consecutive turns.
 
     “Of all the creatures that attack in great raucous swarms, few possess the size and intellect of a fully-grown human being. This dirty man wielding a crude weapon is a soldier in the Army of the Dead, and has sworn an oath to die on the battlefield. His caution is born of cunning, not fear, and he is quick to abandon it if needs must.”
@@ -263,6 +287,7 @@ This enemy, and all other wretches in its pack, loses the guards hallways behavi
 *Looter*
 
 Armed, armored, drops gold, shouts, guards hallways, picks up weapons, picks up armor, tier 2.
+
 This enemy spawns carrying a melee weapon. Each time it picks up a weapon, it gains a small buff to its attack, and each time it picks up a piece of armor, it gains a point of armor. As long as it is carrying at least one ranged weapon, it gains a ranged attack it can use 10 times.
 
     “In every situation, there are some who thrive. This wretch has stolen a large collection of weapons and armor from the battlefield, making him much more dangerous than his fellow soldiers.”
@@ -294,6 +319,7 @@ Armed, armored, stealth=3, ranged attack, clip=4, reload=10, ammo=12, flees to r
 **Outlaws**:
 
 Found in: Forest, Cave, Coast, Pirate, Stronghold, Ruins, Town Raid.
+
 Outlaws spawn in packs. All outlaw packs are neutral and potentially hostile to each other.
 
 *Bandit*
@@ -317,6 +343,7 @@ Armed, monologues, lunge attack, disarm attack, flees when hp<35%, immune to dro
 *Mountebank*
 
 Keeps distance, uses scrolls, picks up scrolls, monologues, flees when hp<50%, tier 1.
+
 This enemy spawns with 0-2 enemy-usable scrolls in its inventory.
 
     “People fear magic, and the unscrupulous sometimes use parlor tricks to pose as fearsome wizards. Their simple understanding of the arcane allows them the use of scrolls, for the purpose of demonstrating their fictional powers on any brave enough to challenge their claims. While he could easily have some very dangerous spells within the folds of his voluminous robes, you are not about to surrender your possessions to this knave.”
@@ -371,6 +398,7 @@ Relentless, construct, res fire/cold/lightning, perception=-3, slow attack, forg
 *Golem Master*
 
 Keeps distance, shouts, flees if can’t cast, 1 random enemy spell, drops gold, tier 3.
+
 This enemy always has the enemy spells “Heal Other” and “Haste Other” and always has a pack of at least two golems.
 
     “Specialists in the art of constructing and maintaining golems, these wizards can imbue their constructs with a quickening energy, and reform their bodies from thin air when damaged.
@@ -396,6 +424,7 @@ Slow movement, slow attack, relentless, cleave=3, friendly fire, massive, res fi
 *Lich*
 
 Keeps distance, flees if can’t cast, drops gold, friendly fire, undead, 5 random spells, quick cast=1, tier 4.
+
 When this enemy spawns, it also spawns an item called a phylactery. If there are any treasure chests extant on the map, there is a 50% chance the phylactery will spawn within one of those chests. Otherwise, the lich spawns carrying it. This item registers as strong, evil magic for detect magic effects. When this item is affected by anti-magic, submerged in acid or lava, or picked up by the player, it is immediately destroyed.
 Each phylactery belongs to a specific lich. If a lich dies and its phylactery still exists, the lich will respawn in 20 turns without the “drops gold” trait nearby the spot where it died. If a lich dies while leading a pack, its followers guard the spot where it died.
 If a lich sees its own phylactery, it will collect it.
@@ -405,6 +434,7 @@ If a lich sees its own phylactery, it will collect it.
 *Archlich*
 
 Keeps distance, flees if can’t cast, drops gold, friendly fire, undead, 6 random spells, quick cast=2, tier 5.
+
 This enemy spawns with 3 phylacteries associated with it. 1 is always carried by the Archlich itself. The others each have a 50% chance to spawn into random treasure chests, if there are any, and otherwise are carried by a random other pack leader of the wizards group. All 3 must be destroyed, otherwise the Archlich revives itself in the same way a lich would.
 
     “This desiccated undead creature styles itself as a lich-king of ancient Valakazaht, from before that mythical civilization was flung into ruin almost a thousand years ago. It may be an imposter, having assumed the title in the typical Valakazaht way, but you’re not about to argue the issue with something that could rout armies with a flick of its finger. Ever covetous of its longevity, the Archlich keeps multiple phylacteries, hidden in secure locations or guarded by its lieutenants. Paranoid of its conniving followers, it always keeps one on its person.”
@@ -412,11 +442,13 @@ This enemy spawns with 3 phylacteries associated with it. 1 is always carried by
 **Strandian Forces**:
 
 Found in: Ruins, cave, coast, battlefield, stronghold.
+
 Strandian soldiers are all friendly to each other. Every enemy but Conscripts is limited to 1 per pack.
 
 *Conscript*
 
 Guards hallways, armed, armored, blocks when stationary, spear effect, panicky, tier 1.
+
 When conscripts are adjacent to 2 other conscripts, they gain a bonus to armor and dodge. They will attempt group up with other conscripts until they receive this bonus and then move as a group.
 
     “An entire continent of different cultures has been brought low beneath the countless boots of the Strandian Army. Various innovations, including standardized government issue equipment and tactics emphasizing formation fighting make them a much more effective force than any before them, and their numbers vastly outmatch any other army the continent has ever seen, bar the dead. Working as a unit, conscripts form a shield wall, bristling with pikes.”
@@ -424,6 +456,7 @@ When conscripts are adjacent to 2 other conscripts, they gain a bonus to armor a
 *Champion*
 
 Armed, armored, blocks when stationary, disarm attack, avoids projectiles, ranged attack, reload 6, ammo=4, tier 2.
+
 This enemy only reloads when in wandering, following, or guarding states, not when alert or searching.
 
     “Hand to hand combat is considered an honorable, yet common and coarse craft in Strandian culture. As a consequence, only the lower class, typically veteran conscripts, are recruited to ply this craft in earnest as part of the Strandian Volunteer Corps. In contrast to their radically modern army, these champions reflect traditional conservative battle-sense, fighting defensively and focusing on disarming their opponents.”
@@ -431,6 +464,7 @@ This enemy only reloads when in wandering, following, or guarding states, not wh
 *Commander*
 
 Armed, keeps distance, ranged attack, reload 3, ammo=5, panicky, tier 2.
+
 This enemy always spawns as the leader of a pack of conscripts. This enemy buffs all conscripts in its line of sight passively whenever he is not panicking. This buff, which cannot stack, gives a small bonus to accuracy and dodge, and prevents them from panicking.
 
     “Considered a wholly separate endeavor from grand strategy, the task of commanding troops directly on the battlefield is still considered too delicate a task to entrust to commoners. Volunteers from the middle class and uninherited nobility form the battlefield command, whose task it is keep conscripts organized and fighting at peak efficiency. They are equipped with a light crossbow, for when particularly troublesome threats require executive attention.”
@@ -438,6 +472,7 @@ This enemy always spawns as the leader of a pack of conscripts. This enemy buffs
 *Agent*
 
 Armed, armored, uses potions, picks up potions, ranged attack, ammo=5, stealth=3, perception=2, tier 2.
+
 This enemy will not use its ranged attack until it is spotted. It spawns with 1 random potion in its inventory. This enemy always spawns alone.
 
     “A highly trained operative in service to some arm of the Strandian rulership, this agent is a capable, methodical assassin. No part of the Strandian army, this person’s presence here indicates interests at play beyond the strategic value of the local territory. His weapons of choice are the shortsword and the throwing knives.”
@@ -445,6 +480,7 @@ This enemy will not use its ranged attack until it is spotted. It spawns with 1 
 *Spellslave*
 
 Armored, relentless, 1 random spell, no melee, tier 2.
+
 If this enemy is unable to cast spells, it will pass all its turns until it can again.
 If this enemy gains 4 stacks of “corrosion” or the “sundered armor” condition, it becomes a “Spellbreaker”—see “Outlaws”. It then becomes neutral to the player, and all enemy types except Strandians, to which it is hostile.
 
@@ -453,11 +489,13 @@ If this enemy gains 4 stacks of “corrosion” or the “sundered armor” cond
 **Vampires**:
 
 Found in: Forest, cave, ruins, swamp, tower.
+
 Enemies with vampire in their names will spawn as leaders of packs of enemies of factions they dominate, or else they will spawn alone. High tier vampires spawn relatively early, meaning that the total number of enemies will be few.
 
 *Vampiric Thrall*
 
 Armed, shouts, stealth=1, tier 1.
+
 If all vampires in the level are killed, all Vampire Thralls become neutral to the player
 
     “His features are that of the local common folk, though his gaze carries the intensity of a fanatic. He clutches his improvised weapon with a similar enthusiasm. Ensorcelled by vampires, only his own death or that of his masters can free him.”
@@ -477,6 +515,7 @@ Armed, dominates outlaws, monologues, shouts, perception=1, dark vision, damaged
 *Vampire Sorcerer*
 
 Perception=2, stealth=5, damaged by bright light, dark vision, cowardly, emboldened by player blind, tier 2.
+
 This enemy constantly emits an invisible gas that causes the spaces it occupies to be Dark. This gas also blinds the player when it occupies their space.
 
     "For a fresh vampire, embracing what they have become begins with embracing darkness. Such creatures carry it with them wherever they go, and will use it to hide and to hunt."
@@ -494,6 +533,7 @@ Found in: forest, cave.
 *Wolves*
 
 Grapple attack, fast movement, shouts, cowardly, tier 1.
+
 If a wolf that is not dominated enters line of sight with a monster that dominates wolves, it immediately joins that monster’s pack and loses cowardly. Wolves regain the cowardly trait when that monster dies or is nullified.
 
     “These grey, dog-like predators work together to immobilize and surround prey larger than themselves, but they fear men. If they are attacking, it means they are being controlled with dark magic.”
@@ -501,6 +541,7 @@ If a wolf that is not dominated enters line of sight with a monster that dominat
 *Warg*
 
 Grapple attack, dominates wolves, fast movement, keeps distance, emboldened by: playerhealth<35%, OR no allies, tier 2.
+
 Wargs spawn in packs of wolves and nothing else.
 
     “Though it looks like a large, black, ugly wolf, this creature is actually an evil spirit taken physical form. As cunning as any man, and able to bend common wolves to their will, these monsters exist only to cause violence and spread fear. Though they relish the killing blow, they have little stomach for a fair fight, and prefer to let their slaves weaken their prey before they approach.”
@@ -508,6 +549,7 @@ Wargs spawn in packs of wolves and nothing else.
 *Barghest*
 
 Dominates wolves, fast movement, flees when hp<50%, tier 3.
+
 This creature is hostile to wargs. Wargs in its line of sight are slowed. This creature dominates wolves in its line of sight even if they are already dominated. Only one barghest will spawn in a level.
 
     “If wargs are a cruel joke of the gods, then the Barghest is the punchline. These horrid creatures have bodies only passingly dog-like, hairless and with long spines sprouting from their back, and a head more like an orc’s than anything else. They allow wargs to gather large groups of wolves together in one area, then move in with nightfall, stealing their packs and slaying them one by one. If you do not kill this creature, all the wolves in the area will soon be under its control.”
@@ -525,6 +567,7 @@ While elves are never neutral to the player, by default they will not attack. Th
 *Elven Hunter*
 
 Ranged attack, reload=1, ammo=10, keeps distance, stealth=3, perception=3, cowardly, emboldened by elf rules, armed, tier 1.
+
 This enemy's ranged attack is 20% less likely to apply the targets's armor to its damage roll than a normal attack.
 
     "Covered head-to-toe in natural camoflage, this figure is small and lithe like an adolescent, but it strings a bow with the sureness of a killer. Elves hate men bitterly, and will not suffer trespassers to steal their game or their treasures. Say the tales: For each elf you spot, there's a dozen you don't..."
@@ -532,6 +575,7 @@ This enemy's ranged attack is 20% less likely to apply the targets's armor to it
 *Elven Gladeguard*
 
 Fast attack, cowardly, stealth=2, perception=4, emboldened by elf rules, armed, tier 2.
+
 This enemy's attack is 25% less likely to apply the target's armor to its damage roll.
 
     "The elves hold the land sacred, and from certain special places they must not give any ground, even momentarily. Gladeguards make that possible. Agile enough to avoid any blow, and they wield a razor-sharp stone dagger in each hand. They show their contempt for armor by walking into battle all but naked."
@@ -539,6 +583,7 @@ This enemy's attack is 25% less likely to apply the target's armor to its damage
 *Elven Beastmaster*
 
 Keeps distance, cowardly, stealth=3, perception=3, emboldened by elf rules, tier 2.
+
 This enemy always spawns with at least 1 agressive animal as part of its pack, and has a healing spell that can only heal animals.
 
     "Elves can tame any beast, and purportedly have found use for nearly all of them. The use this elf has for its charges almost certainly invovles disembowling adventurers. It carries only a strange, ornate pipe, which seems to make no sound and yet holds complete sway over the creatures nearby."
@@ -546,6 +591,7 @@ This enemy always spawns with at least 1 agressive animal as part of its pack, a
 *Elven Earthtalker*
 
 Keeps distance, cowardly, stealth=3, perception=5, emboldened by elf rules, tier 2.
+
 This enemy has a very large hearing zone, and does not lose track of the player if they are still in the hearing zone. Once emboldened, this enemy will cast an "Earthcall" spell that alerts elves (and predators) to the player's location and embolden them in a big radius.
 
     "The legends are clear, elf troupes often punish acts that could not possibly have been observed by eyes alone. This elf carries a treebranch staff and wears a trancelike expression. They watch you through the eyes of wilderness itself, and can call out through it to call their wrath on you. Fortunately, the bent body of this hedge witch offers no intrinsic danger."
@@ -553,6 +599,7 @@ This enemy has a very large hearing zone, and does not lose track of the player 
 *Elven Manfeller*
 
 Ranged attack, reload=1, ammo=10, keeps distance, stealth=4, perception=4, cowardly, emboldened by elf rules, armed, tier 3
+
 This enemy's attack is 40% less likely to apply the target's armor to its damage roll.
 
     "All elven fighters train exclusively with a single weapon. Most favor the bow, but as hunters of beasts, not men. This small, camoflagued figure is one of the exceptions, and can put an arrow in an armpit or eyeslit at impressive range and with shocking precision."
@@ -566,6 +613,7 @@ Cowardly, fast movement, drops gold, tier 0.
 *Bladefang*
 
 Stealth=3, perception=1, tier 2.
+
 When this enemy moves adjacent to a target, it immediately makes an instant attack against one such target.
 
     "A giant cat with long, sturdy, foreward-facing tusks. Thick knots of muscle form its fore-body, which can propel its tusks through steel plate with ease, and gore a man apart with one vicious wrench."
@@ -573,6 +621,7 @@ When this enemy moves adjacent to a target, it immediately makes an instant atta
 *Snaretongue*
 
 Stealth=1, Slow Movement, tier 2.
+
 This enemy uses a ranged attack that pulls the target toward it on hit. If the target would be pulled into the Snaretongue's space, it is "swallowed whole". The two share a space, the swallowed target cannot move, has certain penalities on checks, and takes automatic acid and physical damage each round. This effect typically ends when the swallowed target dies or kills the Snaretongue with melee attacks.
 
     "A massive but squat lizard lurks there in the underbrush. A thick, pink tongue lashes out of its gaping maw... dragging its living prey into its waiting jaws."
@@ -585,6 +634,7 @@ Beyond Things mostly spawn individually and are neutral to each other, but each 
 *Organizer*
 
 Invisible, Stealth=3, fast attack, Tier 2.
+
 This enemy is hostile to everything but Beyond Things. When it kills something with a melee attack, it begins "organizing", during which it will not act for 20 rounds (it stops early only if it takes damage).
     
     "Likened to skulking predators by frightened survivors, these things can only be known by the sounds of frenzied scratching they make as they move. They seem to posses a morbid interest with the creatures of our world, and, after tearing them to shreds with invisible blades, will arrange their organs in neat little rows.
