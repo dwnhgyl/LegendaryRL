@@ -10,6 +10,8 @@ Items represent a collection of small, useful, and expendable tools.
     
 **Potion of Brilliance<sup>d</sup>**: When drunk, the drinker gains a large bonus to spellpower, their channeling time is reduced by 1, and they gain telepathy in a large oblong shape in front of them.
 
+**Potion of Lightning<sup>t</sup>**: When drunk, the drinker gains lightning resistance. When thrown, causes lightening damage in a small aoe around where it lands. When used to coat a weapon, deals lightning damage to the wielder.
+
 **Potion of Paralysis<sup>t</sup>**: If thrown, releases a cloud of paralytic gas. If drunk, ???
 
 **Potion of Fire<sup>t</sup>**: If thrown, creates a fiery explosion. If drunk, applies fire immunity buff. If used to coat weapon, applies extra fire damage on hit. For as long as weapon coating is in effect the weapon acts as a light source.
@@ -37,6 +39,8 @@ Items represent a collection of small, useful, and expendable tools.
     Scrolls scale with your base spellpower, determined by your wisdom. Most scrolls can be found and used by certain enemies. Those that can never be used by enemies are marked with *. Scrolls without a description function exactly as the player spell of the same name.
 
 **Scroll of Identify**: These scrolls immediately self-identify when picked up. They have a low price in shops, and spawn in shops quite often. They prompt the player to specify an unidentified item, and identify the item selected. At higher levels of spellpower, they will prompt the player to repeat the process, resulting in 2 or more items being identified.
+
+**Scroll of Remove Curse**: This scroll has no effect unless you are cursed (and NPCs will not use it). If you are cursed, it will grant you a buff that turns off the effects of all curses affecting you, which will last until you finish the current level. At higher levels of spellpower, it will remove 1 random curse entirely, in addition to giving you the buff. At very high spellpower, it will give you the option of removing 1 random curse or gain that curse's adaption perk.
 
 **Scroll of Divination**
 
@@ -365,3 +369,13 @@ Enc=2
 A +0 pair of guantlets gives a small parry bonus and a 10% bonus to armor apply chance, but give a penalty to accuracy. As enhancement bonus increases, gauntlets grant a bonus to armor.
 
     "Gloves lined with steel are heavy and awkward, but the ability to catch a swung blade unharmed is invaluable while fighting."
+
+## **Shoes**
+
+**Armored Boots**
+Enc=2
+
+A +0 pair of Armored Boots grants a 10% bonus to armor apply chance, but gives a penalty to sprint speed. As enhancement bonus increases, armored boots grant a bonus to armor.
+
+    "Steel plates between leather hide makes these boots heavy. Footwork is hard, and running is harder, but when the blade strikes your calf only to bounce off with a resounding "twang", it will all be worth it."
+    
