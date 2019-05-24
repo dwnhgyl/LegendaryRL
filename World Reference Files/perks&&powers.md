@@ -69,13 +69,13 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 ## *Tricks*
 
-**Assassinate**: Unlocks a critical strike option with a +200% damage multiplier. If the enemy dies, their death does not make any extra noise (same sneak/hide malus as moving). If the attack deals sneak attack damage (such as against an unaware target) that damage is tripled as well.
+**Assassinate**: Unlocks a critical strike option with a 200% damage multiplier. If the enemy dies, their death does not make any extra noise (same sneak/hide malus as moving). If the attack deals sneak attack damage (such as against an unaware target) that damage is tripled as well.
 
-**Careful Aim**: When making a critical strike or striking an unaware enemy, you reduce the likelihood that armor will apply to that attack by 4% for each point of Cunning you have.
+**Careful Aim**: Whenever you add cunning damage to your attack, you reduce the likelihood that armor will apply to that attack by 5% for each point of Cunning you have. A similar effect applies to any critical strike.
 
 **Camoflage**: At the start of each mission, a number of "camoflage" items spawn on the floor of the level. Upon pick-up, these items disappear and grant you a small bonus to hide that will last until you leave the level. The number of camoflage items in a level depends on your Cunning.
 
-**Crowd Cover**: If an enemy is aware of hostiles besides the player, it will ignore the player to attack them, even if the player is closer.
+**Crowd Cover**: If an enemy is aware of hostiles besides the player, and those hostiles are within 6 spaces of the player, it will ignore the player to attack them, even if the player is closer.
 
 **Healer's Art**: Activated from the special abilities menu. Causes the player to wait for 30 turns, and then heals the player HP equal to 20 times their Cunning. Usable once per mission.
 
@@ -85,11 +85,13 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Poisoncraft**: Damage dealt to enemies that is caused by the effects of coating a weapon with a potion is increased by a figure that scales with your Cunning. 1 extra Potion of Poison is spawned on the floor of every mission.
 
+**Scrappy**: When you dodge a melee attack, gain a "scrappy" buff that increases melee accuracy and damage slightly, scaling with Cunning.
+
 **Disappearing Act**: Activate from the special abilities menu. For 5 turns, you gain a large bonus to Sneak and Hide and enemies can lose track of you even if you are still in their vision zone. Usable once per mission.
 
 **Statue Gambit**: You receive a small (additional) bonus to Sneak and a large (additional) bonus to Hide when standing still.
 
-**Alchemist**: Immediately identify 7 random potions, starting with those in your inventory, if applicable. At the start of each level, receive a random potion. If you pick up “alchemical scraps” you will be prompted to turn it into one of three potions (taken from the list of identified potions).
+**Alchemist**: Immediately identify random potions equal to your cunning, starting with those in your inventory. Each time your cunning increases, identify a random potion. At the start of each level, receive a random potion. If you pick up “alchemical scraps” you will be prompted to turn it into one of three potions (taken from the list of identified potions).
 
 **Sniper**: While standing still (and not casting/reloading), while holding a ranged weapon, you gain a stacking “aim” bonus that greatly improves accuracy and slightly improves damage multiplier. The number of aim stacks you can accrue is equal to Cunning. Stacks are removed if you do anything besides stand still.
 
@@ -114,11 +116,13 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Discretion**: Valor now lowers effective encumberance for all penalties, including stealth and speed penalties.
 
-**Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 4 plus the enemy's tier, times the enemy's tier, plus 1. So for tiers 0, 1, 2, and 3, that's 1, 6, 13, and 22.
+**Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 5 plus the enemy's tier, times the enemy's tier, plus 2. So for tiers 0, 1, 2, and 3, that's 2, 7, 16, and 26.
 
 **Berserk**: When you make a “Reckless” attack, any critical attack except “Cautious”, or spend a turn bonestuck, you gain a stack of the “Berserk” buff that grants small bonuses to dodge and armor and large bonuses to melee damage and accuracy. You can accrue a number of berserk stacks equal to your Valor. Stacks are lost at a rate of 1 each round you do not gain a stack.
 
 **Blood Rage**: Whenever you kill an enemy with an attack, gain stacks of Berserk equal to its tier+2. Whenever you take damage from an attack, gain a stacks of berserk equal to 1/10th the damage, rounded down. **Requires Berserk**.
+
+**Sunder**: Unlockes a basic and a critical strike option. The basic option has a damage mod 125% and causes the player to drop their guard. It never bypasses armor. When it lands on an enemy with armor, it applies stacks of armor damage equal to half of your valor (rounded up). The critical strike is similar except it has a 200% damage mod, applies stacks of armor damage equal to your valor, and stuns the target for a round.
 
 **Overwhelm**: Every melee attack, regardless of outcome against an enemy has a 20% chance to apply the "Overwhelmed" debuff to an enemy for exactly 2 turns. Overwhelmed enemies have their guard down, cannot cast spells, and cannot move.
 
