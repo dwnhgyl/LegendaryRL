@@ -637,4 +637,13 @@ Invisible, Stealth=3, fast attack, Tier 2.
 
 This enemy is hostile to everything but Beyond Things. When it kills something with a melee attack, it begins "organizing", during which it will not act for 20 rounds (it stops early only if it takes damage).
     
-    "Likened to skulking predators by frightened survivors, these things can only be known by the sounds of frenzied scratching they make as they move. They seem to posses a morbid interest with the creatures of our world, and, after tearing them to shreds with invisible blades, will arrange their organs in neat little rows.
+    "Likened to skulking predators by frightened survivors, these things can only be known by the sounds of frenzied scratching they make as they move. They seem to posses a morbid interest with the creatures of our world, and, after tearing them to shreds with invisible blades, will arrange their organs in neat little rows."
+
+*Mirror-Thing*
+
+Special attack
+
+This enemy is hostile only to the player. It is nuetral to everything else, and that cannot be changed except by effects that over-write normal loyalty rules (like certain spells). Each round that a Mirror-Thing is seen by the player, the player gains stacks of a "mirror" debuff. The closer the Mirror-Thing is, the more stacks the player will gain at once. This debuff does nothing, except that if the player ever has 100 stacks they immediately die.
+Instead of dealing damage, this enemy's attack causes the player's facing to center on the enemy.
+
+    "These entities resemble lumpy black clay in the rough shape of a human. They are thought to steal the souls of men, explaining the irecoverable catatonia of their victims. As you see a distorted reflection of yourself in the figure's inky surface, you know only that you feel a deep, wordless terror, and that you cannot, struggle as you might, shut your eyes."
