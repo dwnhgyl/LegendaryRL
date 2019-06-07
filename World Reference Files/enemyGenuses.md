@@ -590,7 +590,7 @@ This enemy always spawns with at least 1 agressive animal as part of its pack, a
 
 *Elven Earthtalker*
 
-Keeps distance, cowardly, stealth=3, perception=5, emboldened by elf rules, tier 2.
+Keeps distance, cowardly, stealth=3, perception=5, Tracker(40) emboldened by elf rules, tier 2.
 
 This enemy has a very large hearing zone, and does not lose track of the player if they are still in the hearing zone. Once emboldened, this enemy will cast an "Earthcall" spell that alerts elves (and predators) to the player's location and embolden them in a big radius.
 
@@ -628,7 +628,7 @@ This enemy uses a ranged attack that pulls the target toward it on hit. If the t
 
 **Beyond Things**
 
-Found in: Hellscape, Tower
+Found in: Hellscape, Tower, Dungeon
 Beyond Things mostly spawn individually and are neutral to each other, but each have their own behaviors.
 
 *Organizer*
@@ -641,9 +641,17 @@ This enemy is hostile to everything but Beyond Things. When it kills something w
 
 *Mirror-Thing*
 
-Special attack
+Special attack, Tracker (25), Tier 2
 
 This enemy is hostile only to the player. It is nuetral to everything else, and that cannot be changed except by effects that over-write normal loyalty rules (like certain spells). Each round that a Mirror-Thing is seen by the player, the player gains stacks of a "mirror" debuff. The closer the Mirror-Thing is, the more stacks the player will gain at once. This debuff does nothing, except that if the player ever has 100 stacks they immediately die.
 Instead of dealing damage, this enemy's attack causes the player's facing to center on the enemy.
 
     "These entities resemble lumpy black clay in the rough shape of a human. They are thought to steal the souls of men, explaining the irecoverable catatonia of their victims. As you see a distorted reflection of yourself in the figure's inky surface, you know only that you feel a deep, wordless terror, and that you cannot, struggle as you might, shut your eyes."
+
+*Ghost Beast*
+
+Slow Attack, unparryable, physical immunity, wide sight arc, invisible in bright light, stealth=1, Tier 2
+
+This enemy is nuetral to other Beyond Things, and to everything else, initially. It has a 15% chance to become hostile with any non-Beyond Thing it is aware of each round. If it stops being aware of anything it's hostile to, it will become nuetral to them again (even if it became hostile through other means, like being attacked).
+
+    "A dim green glow the size of a bear is all that belies the presence of these things. While they appear spectral, the threat they pose is physical, brutish even. Their forms are solid, yes, harder than any stone or steel, and when some unknowable thing brings their ire upon a nearby creature they pulverize it with amorphous limbs. The tales say to kill it with fire, but warn it does not burn quickly."
