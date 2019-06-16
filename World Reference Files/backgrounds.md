@@ -4,9 +4,9 @@
 
 3 Valor
 
-Great Spear, Hat, Boots, Dagger
+Great Spear, Hat, Leather Boots, Dagger
 
-Potion of Healing, Potion of Strength, Potion of Speed (all ID’d)
+Potion of Healing, Potion of Strength (both ID’d)
 
 “A broad-chested, thick-necked farmhand with a sharpened pitchfork can be a dangerous combatant indeed! Before you set on your adventure, the community provided you with some herbal farmer’s potions, just as useful for an Adventurer!”
 
@@ -46,7 +46,7 @@ Longsword, Chainmail, 2 Random Scrolls (both ID’d), 60 Gold
 
 3 Cunning
 
-Dagger, Cloak, Hood, Footpads, 30 Gold
+Dagger, Cloak, Hood, Soft Shoes, 30 Gold
 
 “You grew up on the streets, nicking anything you could get away with. Everything you’ve ever had, you took, because no one would give it to you. And you’re still alive. Why should you settle for scraps, when you get cursed and hunted for taking anything at all? The world owes you nothing, so you shall nab glory out from under its nose!”
 
@@ -54,7 +54,7 @@ Dagger, Cloak, Hood, Footpads, 30 Gold
 
 1 Cunning, 2 Wisdom
 
-Staff, Cloak, Footpads, Dagger, 2 Random Scrolls (all ID’d)
+Staff, Cloak, Soft Shoes, Dagger, 2 Random Scrolls (all ID’d)
 
 “All told, you do not regret being forced into the cloister. You learned much you could not have learned elsewhere, including much they did not want you to. But you have outgrown the place, and the world awaits!”
 
@@ -70,7 +70,7 @@ Dagger, Cloak, Sling, 5 Random Potions (all ID’d)
 
 1 Valor, 2 Cunning
 
-Bow, Dagger, Extra Quiver, Cloak, Hood
+Bow, Dagger, Leather Boots, Cloak, Hood
 
 “You’ve stalked and killed mighty beasts. You’ve seen monsters and bandits and evil spirits and survived it all. Surely you’re fit for glory! If the wilds of this land send you something you haven’t seen before, you’ll do what you’ve always done. Improvise. Adapt. Overcome.”
 
