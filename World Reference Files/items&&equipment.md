@@ -379,3 +379,16 @@ A +0 pair of Armored Boots grants a 10% bonus to armor apply chance, but gives a
 
     "Steel plates between leather hide makes these boots heavy. Footwork is hard, and running is harder, but when the blade strikes your calf only to bounce off with a resounding "twang", it will all be worth it."
     
+**Leather Boots**
+Enc=1
+
+Provides a bonus to sprint speed and dodge chance.
+
+    "These boots are comfortable and practical. Flexible and sturdy. Whether it's the uneven ground in the wilderness or the cluttered floor of some decrepit ruins, you will need to move with speed and suddeness. You can trust these with your footing."
+
+**Soft Shoes**
+Enc=0
+
+Provides a bonus to Sneak.
+
+    "It is rare to find shoes practical enough for an adventurer, who are notoriously picky about their footwear. These ones muffle your footsteps, and seem like they'd survive a trek through a marsh or a mountain. They'll do."
