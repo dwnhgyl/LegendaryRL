@@ -20,6 +20,8 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Fireball**: 3 turns. Shoots a projectile which, upon hitting an enemy, a wall, or the targeted space, deals moderate fire damage in a moderate aoe. Notably, damage dropoff only reaches half damage at the edge of the radius, unlike other aoe damage effects. The projectile has a speed of 4 spaces per round. Fireball deals (60-Spellpower)% damage to the caster.
 
+**Heroism**: 2 turns. Grants the heroism buff to the player for a short duration. This buff gives a small bonus to many stats, such as stealth, accuracy, defenses, etc. Additionally, the player gains a small amount of temporary hit points, which will expire with the buff if not lost by then.
+
 **Lightning Bolt**: 3 turns. Shoots an instantaneous projectile which can travel through any number of enemy spaces, dealing moderate lightning damage to each enemy it passes through.
 
 **Divination**: 7 turns. Establishes a moderate area of effect around a targeted space, chosen with no restrictions. That area is immediately mapped, including traps and items, and player has complete telepathy within that area for a short duration, detecting all creatures regardless of stealth value.
@@ -33,6 +35,8 @@ The effects that spells have scale with spell power, a hidden stat determined by
 **Premonition**: 6 turns. When cast, the game remembers the complete state of the level that instant. Play continues normally for a short duration, except that the player has a un-removable "premonition" buff for a short duration. When the buff expires or the player dies, the game returns to the state when premonition was cast.
 
 **Static Charge**: 5 turns. Applies a buff to the caster for a short duration. Each turn, an enemy within a short range will be targeted by a highly accurate instantaneous projectile that deals light lighting damage.
+
+**Succor**: 11 turns. Grants a small amount of temporary hit points to the player for a long duration.
 
 **Wind Step**: 4 turns. Causes targeted creature (including the player) to gain the Wind Step buff for a short duration. This buff makes movement instant on a 2 turn cooldown, grants Flight, and grants a moderate dodge bonus.
 
@@ -120,9 +124,13 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Berserk**: When you make a “Reckless” attack, any critical attack except “Cautious”, or spend a turn bonestuck, you gain a stack of the “Berserk” buff that grants small bonuses to dodge and armor and large bonuses to melee damage and accuracy. You can accrue a number of berserk stacks equal to your Valor. Stacks are lost at a rate of 1 each round you do not gain a stack.
 
-**Blood Rage**: Whenever you kill an enemy with an attack, gain stacks of Berserk equal to its tier+2. Whenever you take damage from an attack, gain a stacks of berserk equal to 1/10th the damage, rounded down. **Requires Berserk**.
+   ---**Blood Rage**: Whenever you kill an enemy with an attack, gain stacks of Berserk equal to its tier+2. Whenever you take damage from an attack, gain a stacks of berserk equal to 1/10th the damage, rounded down.
 
 **Sunder**: Unlockes a basic and a critical strike option. The basic option has a damage mod 125% and causes the player to drop their guard. It never bypasses armor. When it lands on an enemy with armor, it applies stacks of armor damage equal to half of your valor (rounded up). The critical strike is similar except it has a 200% damage mod, applies stacks of armor damage equal to your valor, and stuns the target for a round.
+
+**Toe-to-Toe**: For each enemy that is adjacent to you, aware, and hostile, you gain a bonus to Accuracy and Parry. This bonus is higher for higher-tier enemies. You are immune to disarm.
+
+  ---**Tooth-to-Tooth**: You now also receive a bonus to the damage modifier of all your attacks for each enemy in melee with you. When blinded, you can still see spaces adjacent to you. When stunned, you can make a melee attack instead of standing still.
 
 **Overwhelm**: Every melee attack, regardless of outcome against an enemy has a 20% chance to apply the "Overwhelmed" debuff to an enemy for exactly 2 turns. Overwhelmed enemies have their guard down, cannot cast spells, and cannot move.
 
