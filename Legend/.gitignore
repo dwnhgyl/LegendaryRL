@@ -1,0 +1,5 @@
+#ignore environment and vscode
+.env/
+.vscode/
+.vs/
+*.pyc
