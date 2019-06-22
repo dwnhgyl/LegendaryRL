@@ -655,3 +655,11 @@ Slow Attack, unparryable, physical immunity, wide sight arc, invisible in bright
 This enemy is nuetral to other Beyond Things, and to everything else, initially. It has a 15% chance to become hostile with any non-Beyond Thing it is aware of each round. If it stops being aware of anything it's hostile to, it will become nuetral to them again (even if it became hostile through other means, like being attacked).
 
     "A dim green glow the size of a bear is all that belies the presence of these things. While they appear spectral, the threat they pose is physical, brutish even. Their forms are solid, yes, harder than any stone or steel, and when some unknowable thing brings their ire upon a nearby creature they pulverize it with amorphous limbs. The tales say to kill it with fire, but warn it does not burn quickly."
+
+*The Glow*
+
+Invisible, Stealth=3, keeps distance, does not attack, Regeneration, Tier 2
+
+This enemy emits a large quanitity of gas that produces dim light and drains the HP of anything that occupies it.
+
+    "The source of the eerie light that pervades this area cannot be seen. But from deep within the glow is the faintest rythmic sound, like the beating of a heart made of tinny brass. The tales speak of ghosts dwelling within the deadly light, that a stout man might seize upon and slay, to banish the glow for good. Could it be something mortal lies, invisible, within this terror?"
