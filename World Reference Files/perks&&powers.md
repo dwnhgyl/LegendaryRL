@@ -20,7 +20,7 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Fireball**: 3 turns. Shoots a projectile which, upon hitting an enemy, a wall, or the targeted space, deals moderate fire damage in a moderate aoe. Notably, damage dropoff only reaches half damage at the edge of the radius, unlike other aoe damage effects. The projectile has a speed of 4 spaces per round. Fireball deals (60-Spellpower)% damage to the caster.
 
-**Heroism**: 2 turns. Grants the heroism buff to the player for a short duration. This buff gives a small bonus to many stats, such as stealth, accuracy, defenses, etc. Additionally, the player gains a small amount of temporary hit points, which will expire with the buff if not lost by then.
+**Heroism**: 2 turns. Grants the heroism buff to the player for a short duration. This buff gives a small bonus to many stats, such as stealth, accuracy, defenses, etc. Additionally, the player gains a tiny amount of temporary hit points, which will expire with the buff if not lost by then.
 
 **Lightning Bolt**: 3 turns. Shoots an instantaneous projectile which can travel through any number of enemy spaces, dealing moderate lightning damage to each enemy it passes through.
 
@@ -75,11 +75,17 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Assassinate**: Unlocks a critical strike option with a 200% damage multiplier. If the enemy dies, their death does not make any extra noise (same sneak/hide malus as moving). If the attack deals sneak attack damage (such as against an unaware target) that damage is tripled as well.
 
-**Careful Aim**: Whenever you add cunning damage to your attack, you reduce the likelihood that armor will apply to that attack by 5% for each point of Cunning you have. A similar effect applies to any critical strike.
+**Bushwhack**: Improves the rate at which Cunning increases sneak attack damage. If an enemy is reduced to less than (2 x Cunning)% HP by an attack that dealt sneak attack damage, that enemy dies.
+
+**Blindspots**: Tightens the vision cones of all enemies slightly.
+
+**Careful Aim**: Whenever you add sneak attack damage to your attack, you reduce the likelihood that armor will apply to that attack by 5% for each point of Cunning you have. A similar effect applies to any critical strike.
 
 **Camoflage**: At the start of each mission, a number of "camoflage" items spawn on the floor of the level. Upon pick-up, these items disappear and grant you a small bonus to hide that will last until you leave the level. The number of camoflage items in a level depends on your Cunning.
 
 **Crowd Cover**: If an enemy is aware of hostiles besides the player, and those hostiles are within 6 spaces of the player, it will ignore the player to attack them, even if the player is closer.
+
+**Disguise**: At the start of each mission, a number of "disguise" items spawn on the floor of the level. Upon pick-up, these items disappear, and a random enemy pack on that floor will receive the "Fooled" status. Fooled enemies do not check the player's stealth, and do not become aware on their own. If a fooled enemy becomes aware, they lose the fooled status. The number of disguise items in a level depends on your Cunning.
 
 **Healer's Art**: Activated from the special abilities menu. Causes the player to wait for 30 turns, and then heals the player HP equal to 20 times their Cunning. Usable once per mission.
 
@@ -106,6 +112,8 @@ The effects that spells have scale with spell power, a hidden stat determined by
 **Uncanny Dodge**: Increase the rate of scaling for dodge bonus from Cunning slightly. You are not limited to dodging once per round, and can even dodge the same attack multiple times. This can allow the player to dodge their way out of AOE effects by making multiple checks in a row.
 
 **Thief**: Unlocks a critical strike option that deals no damage and always hits. The player is prompted to take any items in the enemy’s inventory that they choose. If possible, the enemy suffers the “disarmed” debuff. This does not make any extra noise (same sneak/hide malus as moving), and the target is not automatically alerted to the player. Additionally, the first time you pick an item off the ground each round, the action is instant and silent.
+
+**Trapsmith**: Used from the special abilities menu. Prompts the player to select an adjacent trap. Different traps can be disabled, triggered, re-enabled, or even rendered "friendly", depending on the trap. Some traps can be taken, and will appear in the inventory as items with 1 encumberance. When used, these items allow the player to place the trap on an adjacent space. Disabled traps now appear in levels, depending on your Cunning.
 
 **Quick Hands**: Automatically activates when you draw a weapon, put one away, throw something, or spend a turn reloading. That action becomes instant. After it activates, it goes on cooldown for two turns.
 
