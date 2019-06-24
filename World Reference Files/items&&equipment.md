@@ -12,7 +12,7 @@ Items represent a collection of small, useful, and expendable tools.
 
 **Potion of Lightning<sup>t</sup>**: When drunk, the drinker gains lightning resistance. When thrown, causes lightening damage in a small aoe around where it lands. When used to coat a weapon, deals lightning damage to the wielder.
 
-**Potion of Paralysis<sup>t</sup>**: If thrown, releases a cloud of paralytic gas. If drunk, ???
+**Potion of Paralysis<sup>t</sup>**: If thrown, releases a cloud of paralytic gas. If drunk, turns the player into a statue, an object that cannot be damaged or noticed by enemies, for an extended period of time.
 
 **Potion of Fire<sup>t</sup>**: If thrown, creates a fiery explosion. If drunk, applies fire immunity buff. If used to coat weapon, applies extra fire damage on hit. For as long as weapon coating is in effect the weapon acts as a light source.
 
