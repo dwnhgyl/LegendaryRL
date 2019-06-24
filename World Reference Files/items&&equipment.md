@@ -7,10 +7,16 @@ Items represent a collection of small, useful, and expendable tools.
 **Potions**: Potions are identifiable items. Before a type of potion is identified, it appears as an “unknown potion.” When a potion’s unique effects are observed, the potion is immediately identified. There are three ways to interact with potions, but not all potions have unique results for every interaction. For instance, if a potion of might or speed is thrown, it will be destroyed without being identified. Typically, if a potion with no coat or drink effect is drunk or used to coat a weapon, it will act as if thrown onto the player’s space (and be identified as normal). Likewise, if a potion with no thrown effect is thrown at an enemy, it will resolve its drink effect on the enemy struck.
 
     Some enemies can use potions. Enemies use each type of potion a specific way. t indicates a potion enemies will throw at the player. d indicates a potion enemies will drink. c indicates a potion enemies will use to coat their weapon (this applies an enemy-only buff, since enemies don’t actually use equipment).
-    
+
+**Potion of Awarness<sup>d</sup>**: When drunk, the drinker gains a buff that increases their sight and hearing values and enlarges their awareness zones. Enemies will drink this potion on the turn they become un-aware of the player while they are pursuing them. If thrown, the potion makes a loud noise.
+
 **Potion of Brilliance<sup>d</sup>**: When drunk, the drinker gains a large bonus to spellpower, their channeling time is reduced by 1, and they gain telepathy in a large oblong shape in front of them.
 
+**Potion of Grease<sup>d</sup>**: When drunk, grants the drinker the "Slippery" buff, granting them a bonus to dodge. When a slippery character dodges an attack, they move an additional space in a direction of their choosing. When thrown, covers the ground in an area with grease. Any character that walks onto grease will be unable to act, and continue moving in that direction at a rate of 2 spaces per round until they enter a non-greased space.
+
 **Potion of Lightning<sup>t</sup>**: When drunk, the drinker gains lightning resistance. When thrown, causes lightening damage in a small aoe around where it lands. When used to coat a weapon, deals lightning damage to the wielder.
+
+**Potion of Oil<sup>t</sup>**: When drunk, the drinker gains Acid resistance. When thrown, covers the ground in an area with oil, and applies the "Oiled" status on all characters in that area. Characters that are oiled or standing on oil have a chance to stumble when they move. If any part of the oiled area is exposed to fire, the entire area will become burning. If an oiled character takes fire damage, they lose the status and immediately take a large amount of fire damage.
 
 **Potion of Paralysis<sup>t</sup>**: If thrown, releases a cloud of paralytic gas. If drunk, turns the player into a statue, an object that cannot be damaged or noticed by enemies, for an extended period of time.
 
