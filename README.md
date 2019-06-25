@@ -6,7 +6,7 @@ This is the beginning of a collaboration between an idea guy and two relatively 
 
 **Language**:
 
-We will be using Python 3.5.3 as it's a standard distribution and can easily be read and added to.
+We are now working with Python 3.7.3.
 
 **Discord**:
 
