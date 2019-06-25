@@ -24,7 +24,7 @@ We will be working to make a Github Pages website when the time is appropriate.
 
 We are working from a libtcodpy tutorial base that can be found here:
 
-<http://rogueliketutorials.com/tcod/>
+<http://rogueliketutorials.com/>
 
 It was transcribed accurately by EpikMaowPhailure and we will be modifying it to the point
 of unrecognizability as we make this game but it is important to note where it came from. It is
