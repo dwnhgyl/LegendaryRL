@@ -40,7 +40,7 @@ def handle_player_turn_keys(key):
         return {'move': (-1, 1)}
     elif key_char == 'n':
         return {'move': (1, 1)}
-    elif key_char == 'z':
+    elif key_char == 'z' or key_char == '.':
         return {'wait': True}
 
     if key_char == 'g':
