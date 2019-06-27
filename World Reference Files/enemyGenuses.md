@@ -663,3 +663,17 @@ Invisible, Stealth=3, keeps distance, does not attack, Regeneration, Tier 2
 This enemy emits a large quanitity of gas that produces dim light and drains the HP of anything that occupies it.
 
     "The source of the eerie light that pervades this area cannot be seen. But from deep within the glow is the faintest rythmic sound, like the beating of a heart made of tinny brass. The tales speak of ghosts dwelling within the deadly light, that a stout man might seize upon and slay, to banish the glow for good. Could it be something mortal lies, invisible, within this terror?"
+
+*You-Meen*
+
+Armed, Armored, panicky, reckless, Tier 1
+
+    "A dumb, ugly animal in the rough shape of a man. Its armor and weapon are of strangly fine craftsmanship, but they are lashed to its body as it seemingly lacks the cunning to keep them itself. It's eyes glow with uncontained rage and it jabbers gibberish constantly."
+    
+*Bogeyman*
+
+Fast move, stealth=4, cowardly, 
+
+If this enemy begins its turn within the player's vision zone (but not seen) it is stunned. If the player is aware of this enemy, and it starts its turn within the player's vision zone, it takes half of its max HP in damage at the start of its turn.
+
+    "What you had only a moment before mistaken for a rock or a tree, is actually a wildly alien creature, whose features are indescribable, fleeing from your memory even as you stand in awe of them. Human sight is anathema to these skulking predators, but comprehension, it seems, is deadly."
