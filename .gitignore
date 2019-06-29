@@ -1,6 +1,9 @@
 # Game save files
 *.dat*
 
+# Personal scripts
+show_project_tree.sh
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
