@@ -26,7 +26,7 @@ We are working from a libtcodpy tutorial base that can be found here:
 
 <http://rogueliketutorials.com/>
 
-It was transcribed accurately by EpikMaowPhailure and we will be modifying it to the point
-of unrecognizability as we make this game but it is important to note where it came from. It is
-an up-to-date and modularized take on older versions of the libtcodpy tutorial. 
+It was transcribed accurately by EpikMaowPhailure and we will be modifying it to the point of unrecognizability as we make this game but it is important to note where it came from. It is an up-to-date and modularized take on older versions of the libtcodpy tutorial. 
+
+The Fonts were acquired from: <https://github.com/libtcod/python-tcod/tree/master/fonts/libtcod/>
 
