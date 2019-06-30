@@ -1,4 +1,5 @@
 import tcod as libtcod
+import sys
 
 from death_functions import kill_monster, kill_player
 from entity import get_blocking_entities_at_location
@@ -264,7 +265,14 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
 def main():
     constants = get_constants()
 
-    libtcod.console_set_custom_font('arial10x10.png', libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
+    if "--font=small" in sys.argv:
+        font_path = "Legend/arial10x10.png"
+    elif "--font=large" in sys.argv:
+        font_path = "Legend/dejavu16x16_gs_tc.png"
+    else:
+        font_path = "Legend/arial12x12.png"
+        
+    libtcod.console_set_custom_font(font_path, libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
 
     libtcod.console_init_root(constants['screen_width'], constants['screen_height'], constants['window_title'], False)
 
