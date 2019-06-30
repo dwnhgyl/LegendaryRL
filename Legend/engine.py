@@ -262,17 +262,23 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
                 game_state = GameStates.PLAYERS_TURN
 
 
-def main():
-    constants = get_constants()
-
+def get_font_size():
+    """ gets font size from sys.argv """
+    
     if "--font=small" in sys.argv:
         font_path = "Legend/arial10x10.png"
     elif "--font=large" in sys.argv:
         font_path = "Legend/dejavu16x16_gs_tc.png"
     else:
         font_path = "Legend/arial12x12.png"
+
+    return font_path    
+
+
+def main():
+    constants = get_constants()
         
-    libtcod.console_set_custom_font(font_path, libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
+    libtcod.console_set_custom_font(get_font_size(), libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
 
     libtcod.console_init_root(constants['screen_width'], constants['screen_height'], constants['window_title'], False)
 
