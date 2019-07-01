@@ -1,5 +1,8 @@
-import tcod as libtcod
+""" entry point for the program """
+
 import sys
+
+import tcod as libtcod
 
 from death_functions import kill_monster, kill_player
 from entity import get_blocking_entities_at_location
@@ -14,6 +17,8 @@ from render_functions import clear_all, render_all
 
 
 def play_game(player, entities, game_map, message_log, game_state, con, panel, constants):
+    """ play_game handles the turn-by-turn activity within the main game loop """
+
     fov_recompute = True
 
     fov_map = initialize_fov(game_map)
@@ -30,12 +35,13 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
         libtcod.sys_check_for_event(libtcod.EVENT_KEY_PRESS | libtcod.EVENT_MOUSE, key, mouse)
 
         if fov_recompute:
-            recompute_fov(fov_map, player.x, player.y, constants['fov_radius'], constants['fov_light_walls'],
-                          constants['fov_algorithm'])
+            recompute_fov(fov_map, player.x, player.y, constants['fov_radius'], \
+                    constants['fov_light_walls'], constants['fov_algorithm'])
 
-        render_all(con, panel, entities, player, game_map, fov_map, fov_recompute, message_log,
-                   constants['screen_width'], constants['screen_height'], constants['bar_width'],
-                   constants['panel_height'], constants['panel_y'], mouse, constants['colors'], game_state)
+        render_all(con, panel, entities, player, game_map, fov_map, fov_recompute, \
+                message_log, constants['screen_width'], constants['screen_height'], \
+                constants['bar_width'], constants['panel_height'], constants['panel_y'], \
+                mouse, constants['colors'], game_state)
 
         fov_recompute = False
 
@@ -55,6 +61,7 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
         take_stairs = action.get('take_stairs')
         level_up = action.get('level_up')
         show_character_screen = action.get('show_character_screen')
+        # NOTE: pylint warns that 'exit' is a built-in. Re-name it?
         exit = action.get('exit')
         fullscreen = action.get('fullscreen')
 
@@ -92,7 +99,8 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
 
                     break
             else:
-                message_log.add_message(Message('There is nothing here to pick up.', libtcod.yellow))
+                message_log.add_message(Message('There is nothing here to pick up.', \
+                        libtcod.yellow))
 
         if show_inventory:
             previous_game_state = game_state
@@ -102,12 +110,14 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
             previous_game_state = game_state
             game_state = GameStates.DROP_INVENTORY
 
-        if inventory_index is not None and previous_game_state != GameStates.PLAYER_DEAD and inventory_index < len(
-                player.inventory.items):
+        if inventory_index is not None and previous_game_state != GameStates.PLAYER_DEAD and \
+                inventory_index < len(player.inventory.items):
+
             item = player.inventory.items[inventory_index]
 
             if game_state == GameStates.SHOW_INVENTORY:
-                player_turn_results.extend(player.inventory.use(item, entities=entities, fov_map=fov_map))
+                player_turn_results.extend(player.inventory.use(item, entities=entities, \
+                        ifov_map=fov_map))
             elif game_state == GameStates.DROP_INVENTORY:
                 player_turn_results.extend(player.inventory.drop_item(item))
 
@@ -121,7 +131,8 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
 
                     break
                 else:
-                    message_log.add_message(Message('There are no stairs here.', libtcod.yellow))
+                    message_log.add_message(Message('There are no stairs here.', \
+                            libtcod.yellow))
 
         if level_up:
             if level_up == 'hp':
@@ -142,14 +153,16 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
             if left_click:
                 target_x, target_y = left_click
 
-                item_use_results = player.inventory.use(targeting_item, entities=entities, fov_map=fov_map,
+                item_use_results = player.inventory.use(targeting_item, entities=entities, \
+                        fov_map=fov_map,
                                                         target_x=target_x, target_y=target_y)
                 player_turn_results.extend(item_use_results)
             elif right_click:
                 player_turn_results.append({'targeting_cancelled': True})
 
         if exit:
-            if game_state in (GameStates.SHOW_INVENTORY, GameStates.DROP_INVENTORY, GameStates.CHARACTER_SCREEN):
+            if game_state in (GameStates.SHOW_INVENTORY, GameStates.DROP_INVENTORY, \
+                    GameStates.CHARACTER_SCREEN):
                 game_state = previous_game_state
             elif game_state == GameStates.TARGETING:
                 player_turn_results.append({'targeting_cancelled': True})
@@ -236,7 +249,8 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
         if game_state == GameStates.ENEMY_TURN:
             for entity in entities:
                 if entity.ai:
-                    enemy_turn_results = entity.ai.take_turn(player, fov_map, game_map, entities)
+                    enemy_turn_results = entity.ai.take_turn(player, fov_map, game_map, \
+                            entities)
 
                     for enemy_turn_result in enemy_turn_results:
                         message = enemy_turn_result.get('message')
@@ -264,7 +278,7 @@ def play_game(player, entities, game_map, message_log, game_state, con, panel, c
 
 def get_font_size():
     """ gets font size from sys.argv """
-    
+
     if "--font=small" in sys.argv:
         font_path = "Legend/arial10x10.png"
     elif "--font=large" in sys.argv:
@@ -272,15 +286,19 @@ def get_font_size():
     else:
         font_path = "Legend/arial12x12.png"
 
-    return font_path    
+    return font_path
 
 
 def main():
-    constants = get_constants()
-        
-    libtcod.console_set_custom_font(get_font_size(), libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
+    """ 'main' function """
 
-    libtcod.console_init_root(constants['screen_width'], constants['screen_height'], constants['window_title'], False)
+    constants = get_constants()
+
+    libtcod.console_set_custom_font(get_font_size(), libtcod.FONT_TYPE_GREYSCALE | \
+            libtcod.FONT_LAYOUT_TCOD)
+
+    libtcod.console_init_root(constants['screen_width'], constants['screen_height'], \
+            constants['window_title'], False)
 
     con = libtcod.console_new(constants['screen_width'], constants['screen_height'])
     panel = libtcod.console_new(constants['screen_width'], constants['panel_height'])
@@ -307,7 +325,8 @@ def main():
                       constants['screen_height'])
 
             if show_load_error_message:
-                message_box(con, 'No save game to load', 50, constants['screen_width'], constants['screen_height'])
+                message_box(con, 'No save game to load', 50, constants['screen_width'], \
+                        constants['screen_height'])
 
             libtcod.console_flush()
 
@@ -320,7 +339,8 @@ def main():
             if show_load_error_message and (new_game or load_saved_game or exit_game):
                 show_load_error_message = False
             elif new_game:
-                player, entities, game_map, message_log, game_state = get_game_variables(constants)
+                player, entities, game_map, message_log, game_state = \
+                        get_game_variables(constants)
                 game_state = GameStates.PLAYERS_TURN
 
                 show_main_menu = False
@@ -335,10 +355,11 @@ def main():
 
         else:
             libtcod.console_clear(con)
-            play_game(player, entities, game_map, message_log, game_state, con, panel, constants)
+            play_game(player, entities, game_map, message_log, game_state, con, panel, \
+                    constants)
 
             show_main_menu = True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
