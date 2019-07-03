@@ -115,6 +115,8 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Trapsmith**: Used from the special abilities menu. Prompts the player to select an adjacent trap. Different traps can be disabled, triggered, re-enabled, or even rendered "friendly", depending on the trap. Some traps can be taken, and will appear in the inventory as items with 1 encumberance. When used, these items allow the player to place the trap on an adjacent space. Disabled traps now appear in levels, depending on your Cunning.
 
+⋅⋅⋅**Efficacy Unwitnessed**: All traps that deal damage now allow the "upgrade" action. This takes several turns and results in the trap dealing addtional damage according to the player's cunning. Disabled traps spawn more often. 
+
 **Quick Hands**: Automatically activates when you draw a weapon, put one away, throw something, or spend a turn reloading. That action becomes instant. After it activates, it goes on cooldown for two turns.
 
 **River’s Current**: The base speed bonus from sprinting is increased (20->30). Sprinting is not unstealthy (Same hide/sneak malus as normal movement). Sprinting grants a dodge bonus for its duration. You suffer only 3 stacks of fatigue for each 5 rounds spent sprinting.
@@ -124,21 +126,23 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Charge**: When moving while sprinting, you gain stacks of a buff which increases the damage modifier of the next melee attack you make. An attack benefiting from any number of these stacks increases its Cleave value by 1. You can accrue a number of these stacks up to your Valor. While fatigued, you do not take penalties to your combat stats.
 
-**Disarm**: Unlocks a normal attack and a critical attack. The normal attack has a 20% damage modifier, but applies the "Disarmed" debuff to any armed enemy it hits. The critical attack has a 100% damage modifier, and applies the "Severed Arm" debuff to enemies it hits.
+**Disarm**: Unlocks a normal attack and a critical attack. The normal attack has a 20% damage modifier, but applies the "Disarmed" debuff to any armed enemy it hits. The critical attack has a 130% damage modifier, and applies the "Severed Arm" debuff to enemies it hits. This debuff works like disarm, but it is permanent.
 
 **Discretion**: Valor now lowers effective encumberance for all penalties, including stealth and speed penalties.
 
-**Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 5 plus the enemy's tier, times the enemy's tier, plus 2. So for tiers 0, 1, 2, and 3, that's 2, 7, 16, and 26.
+**Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 5 plus the enemy's tier, times the enemy's tier, plus 3. So for tiers 0, 1, 2, and 3, that's 3, 6, 17, and 27.
 
 **Berserk**: When you make a “Reckless” attack, any critical attack except “Cautious”, or spend a turn bonestuck, you gain a stack of the “Berserk” buff that grants small bonuses to dodge and armor and large bonuses to melee damage and accuracy. You can accrue a number of berserk stacks equal to your Valor. Stacks are lost at a rate of 1 each round you do not gain a stack.
 
-   ---**Blood Rage**: Whenever you kill an enemy with an attack, gain stacks of Berserk equal to its tier+2. Whenever you take damage from an attack, gain a stacks of berserk equal to 1/10th the damage, rounded down.
+⋅⋅⋅**Blood Rage**: Whenever you kill an enemy with an attack, gain stacks of Berserk equal to its tier+2. Whenever you take damage from an attack, gain a stacks of berserk equal to 1/10th the damage, rounded down.
 
 **Sunder**: Unlockes a basic and a critical strike option. The basic option has a damage mod 125% and causes the player to drop their guard. It never bypasses armor. When it lands on an enemy with armor, it applies stacks of armor damage equal to half of your valor (rounded up). The critical strike is similar except it has a 200% damage mod, applies stacks of armor damage equal to your valor, and stuns the target for a round.
 
+**Soften 'Em Up**: Whenever you hit an enemy with a ranged weapon attack, they gain the "Softened Up" debuff permanently. When attacking a softened up enemy, the player gets a bonus to accuracy and damage mod. This only affects melee attacks, and only when the softened enemy is below 60% HP.
+
 **Toe-to-Toe**: For each enemy that is adjacent to you, aware, and hostile, you gain a bonus to Accuracy and Parry. This bonus is higher for higher-tier enemies. You are immune to disarm.
 
-  ---**Tooth-to-Tooth**: You now also receive a bonus to the damage modifier of all your attacks for each enemy in melee with you. When blinded, you can still see spaces adjacent to you. When stunned, you can make a melee attack instead of standing still.
+⋅⋅⋅**Tooth-to-Tooth**: You now also receive a bonus to the damage modifier of all your attacks for each enemy in melee with you. When blinded, you can still see spaces adjacent to you. When stunned, you can make a melee attack instead of standing still.
 
 **Overwhelm**: Every melee attack, regardless of outcome against an enemy has a 20% chance to apply the "Overwhelmed" debuff to an enemy for exactly 2 turns. Overwhelmed enemies have their guard down, cannot cast spells, and cannot move.
 
