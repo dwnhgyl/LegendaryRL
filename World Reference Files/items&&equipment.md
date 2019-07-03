@@ -398,3 +398,16 @@ Enc=0
 Provides a bonus to Sneak.
 
     "It is rare to find shoes practical enough for an adventurer, who are notoriously picky about their footwear. These ones muffle your footsteps, and seem like they'd survive a trek through a marsh or a mountain. They'll do."
+    
+
+## *Equipment Egos*
+
+Egos are special features associated with enhanced equipment. Every kind of equipment has a discrete scale at which enhancment bonus produces egos. Typically, items with less impressive enhancment bonuses will gain egos at a faster rate. Equipment that spawns with an enhancement bonus that results in egos (such as a +1 mask), would have egos assigned to it randomly. When the player enhances a piece of equipemnt, and it reaches the threshold where it will gain a new ego, the advancment menu presents a random ego and offers the player to accept it or re-roll it one time.
+
+The following is a list of egos.
+
+**Fortifying** (Armor, shields)
+Fortifying equipment increases the player's max HP by 20 whenever it is equiped.
+
+**Venemous** (One-handed weapons, quivers)
+On hit, these weapons apply a "deadly venom" effect, which deals 5 poison damage each round for 5 rounds.
