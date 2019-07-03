@@ -54,7 +54,7 @@ This enemy gains an attack bonus for each weapon in their inventory, and an armo
 
 Keeps Distance, Shouts, Armed, Armored, dark vision, light sensitivity, tier 2, Perception=1.
 
-Only spawns as the leader of a lower-tier pack. If it reaches the “Duel” result during parley with a leader who is not an Orc Priest, that orc and its pack immediately join the Orc Priest’s band, as if it were a lower tier orc. Orcs in its line of sight act as if they had “Relentless” and no other special behaviors.
+Only spawns as the leader of a lower-tier pack. If it reaches the “Duel” result during parley with a leader who is not an Orc Priest, that orc and its pack immediately join the Orc Priest’s band, as if it were a lower tier orc. Orcs in its pack act as if they had “Relentless” and no other special behaviors.
 
     “Judging by its dress, this is an emissary from the orcish homeland, preaching the pointless faith of the orcs’ dead god to the mongrel barbarians. Religion will almost certainly give his followers courage, but likely not wisdom. These orc-priests are famous for leading their packs into traps.”
 
@@ -100,7 +100,23 @@ Armed, Armored, dark vision, light blindness, Slow movement, Slow attack, reckle
 
     "This orc must weigh at least fifty stone. It effortlessly carries a tree-trunk club and armor improvised from broadshields and rope."
 
-**Kobolds**:
+*Orc Elder*
+
+Armed, Armored, dark vision, light sensitivity, keeps distance, ranged attack, ammo=5, reload=5, tier 3.
+
+These orcs only spawn as leaders of a pack. If it reaches the “Duel” result during parley with a leader who is not an Orc Priest, that orc and its pack immediately join the Orc Priest’s band, as if it were a lower tier orc. This enemy will not reload if aware of the player. This enemy spends its turn in a "Commanding" state when not moving or shooting, which grants the other members of its pack a bonust to Accuracy and Dodge.
+
+    "The visage of this ancient orc has been weathered by years in the wilderness and maimed by countless raids. It busies itself constantly with the sisyphean task of enforcing military discipline among the ranks of its raucous following."
+    
+*Warforged Orc*
+
+Armed, Armored, dark vision, collects weapons, armor, and quivers, ranged attack, reload=1, ammo=1, tier 3.
+
+This enemy gains an attack bonus for each weapon in their inventory, an armor bonus for each piece of armor in their inventory, and 3 additional ammo for each quiver in their inventory.
+
+    "This orc is so covered in iron and steel that you cannot tell where prosthesis ends and armor begins. It's blades are long and sharp, and within its arm-mounted crossbow some strange machination whirs disconcertingly." 
+
+# **Kobolds**:
 
 Found in: Cave, Ruins, Forest, Swamp, Stronghold
 All kobolds on a level will always be friendly to each other, though they spawn and wander in separate packs. Maps in which kobolds are present always feature special “kobold den” terrain, similar to cave terrain, but with more traps and treasure. If kobolds are the main genus, this terrain will be large, multi-chambered, and located centrally in the map. If they are a side genus, a single-room den will spawn, and the kobolds will spawn around it. Kobolds always spawn with one “boss”, of a higher tier than any other kobold in the level, even if there is no boss quest objective, and it always carries a valuable item.
