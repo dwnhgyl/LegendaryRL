@@ -93,11 +93,11 @@ Placeholder damage and accuracy values are relative to other weapons of their ty
 
 **Dagger**
 
-Poor damage, good accuracy, fair parry, Enc=*, backup, quintuple crit damage, no twohand, throwable.
+Poor damage, good accuracy, fair parry, Enc=*, backup, additional base damage on crit, no twohand, throwable.
 
 *The first dagger carried applies no encumbrance, but each other one counts as encumbrance 1.
 
-    “Used across the continent as everything from a craftsman’s tool to an instrument of ritual killing, the daggers greatest virtues are efficiency and control. While ill-suited for a stand-up fight, adventurers often keep a dagger in their boot in case they lose their weapon or need something to throw. Those who rely on the element of surprise may make use of daggers in combat, if only because they have eschewed larger weapons entirely.”
+    “Used across the continent as everything from a craftsman’s tool to an instrument of ritual killing, the dagger's greatest virtues are efficiency and control. While ill-suited for a stand-up fight, adventurers often keep a dagger in their boot in case they lose their weapon or need something to throw. Those who rely on the element of surprise may make use of daggers in combat, if only because they have eschewed larger weapons entirely.”
 
 **Spear**
 
@@ -121,11 +121,11 @@ Good damage, poor accuracy, poor parry, Enc=2, cleave=1, throwmalus=3.
 
 Very good damage, poor accuracy, fair parry, 2-hander, Enc=5, cleave=2.
 
-    “Likely built for decorative purposes, this greataxe is a throwback to the tribal warlords that once roamed the northern steppes. Heavy and unwieldly, this immense two-handed axe would be viewed as impractical by most human denizens of the modern Strandian continent. That said, most of those people don’t wake up in the morning fully intending to slay entire tribes of monsters single-handed.”
+    “Likely built for decorative purposes, this greataxe is a throwback to the tribal warlords that once roamed the northern steppes. Heavy and unwieldly, this immense two-handed axe would be viewed as impractical by most human denizens of the modern Strandian empire. That said, most of those people don’t wake up in the morning fully intending to slay entire tribes of monsters single-handed.”
 
 **Shortsword**
 
-Fair damage, good accuracy, fair parry, Enc=1, backup, throwmalus=2.
+Fair damage, good accuracy, fair parry, Enc=1, backup, throwmalus=3.
 
     “Once people might have just called this a sword, but new smithing methods have resulted in longer blades. Blades of this length typically begin life as back-up weapons issued to Strandian conscripts, but many are sold off by the less scrupulous men of that descriptor, some going so far as to sell each one they are issued. Demand is high, as many warriors want a back-up weapon with a bit more bite than a bootknife, and many footpads see the weapons as a good compromise between the dagger and larger blades.
 
@@ -139,7 +139,7 @@ Good Damage, good accuracy, good parry, Enc=3.
 
 Very good damage, good accuracy, good parry, 2-hander, Enc=5.
 
-    “The integrity of this long blade is preserved by its width. The result is increased weight, and a weapon as suited to bashing as to thrusting. These blades first saw use in warfare, used by units meant to charge and break archer formations. Most of these blades that exist today were built for duelists. Though deadly, these weapons only ever found popular use among adventuring heroes, whose supernatural abilities free them of the need for a shield.”
+    “The integrity of this long blade is preserved by its width. The result is increased weight, and a weapon as suited to bashing as to thrusting. These blades first saw use in warfare, used by units meant to charge and break archer formations. Most of these blades that exist today were built for duelists. These weapons have found popular use among adventuring heroes, whose supernatural abilities free them of the need for a shield.”
 
 **Mace**
 
@@ -149,9 +149,9 @@ Very good damage, fair accuracy, fair parry, slow attack, unparry-able, Enc=3.
 
 **Greatmace**
 
-Exceptional damage, fair accuracy, fair parry, slow attack, unparry-able, 2-hander, Enc=6.
+Exceptional damage, fair accuracy, fair parry, slow attack, knockback, unparry-able, 2-hander, Enc=6.
 
-    “A towering mass of steel and lead, this weapon would look impractical to most denizens of the Strandian continent. It was almost certainly forged in your homeland, for the use of adventurers like yourself. More than one hero of legend has borne the weight of such a weapon through rivers and across mountains, in order to slay monstrous opponents no other weapon could harm.”
+    “A towering mass of steel and lead, this weapon would look impractical to most denizens of the Strandian empire. It was almost certainly forged in your homeland, for the use of adventurers like yourself. More than one hero of legend has borne the weight of such a weapon through rivers and across mountains, in order to slay monstrous opponents no other weapon could harm.”
     
 **Hookblade**
 Fair damage, poor accuracy, fair parry, push-on-hit, Enc=2
@@ -406,8 +406,38 @@ Egos are special features associated with enhanced equipment. Every kind of equi
 
 The following is a list of egos.
 
+**_____proof** (Body armor)
+Grants immunity to a damage element.
+
+**Armor Piercing** (Melee weapons, ranged weapons, quivers)
+Ignores the first 40 points of armor of any enemy struck.
+
+**Camoflaged** (Body Armor, headgear)
+Grants a hide bonus.
+
+**Deflecting** (Armor, shields)
+If an attack would deal the bearer less than 15 damage, negate that damage.
+
 **Fortifying** (Armor, shields)
-Fortifying equipment increases the player's max HP by 20 whenever it is equiped.
+Fortifying equipment increases the player's max HP by 20 for as long as it is equipped.
+
+**Lightweight** (Any equipment with 2 or more Enc)
+Lowers the Enc value of the equipment by 3, minimum 0.
+
+**Magnetic** (Armor)
+When hit in melee, has a 100%/enemy tier chance to inflict disarm to an armed attacker.
+
+**Magnetic** (Shields)
+Upon parrying a melee attack, has a 100%/enemy tier chance to inflict disarm to an armed attacker.
+
+**Mind-expanding** (Headgear)
+Grants +4 spell power when equipped.
+
+**Sealed** (Headgear)
+Renders the wearer immune to all gas effects, including positive ones.
 
 **Venemous** (One-handed weapons, quivers)
 On hit, these weapons apply a "deadly venom" effect, which deals 5 poison damage each round for 5 rounds.
+
+**Viscious** (Melee weapons)
+On hit, +20% chance to become bonestuck. +10% (compounded) damage mod, +20 damage and +20% (compounded) damage mod whenever bonestuck.
