@@ -112,7 +112,7 @@ These orcs only spawn as leaders of a pack. If it reaches the “Duel” result 
 
 Armed, Armored, dark vision, collects weapons, armor, and quivers, ranged attack, reload=1, ammo=1, tier 3.
 
-This enemy gains an attack bonus for each weapon in their inventory, an armor bonus for each piece of armor in their inventory, and 3 additional ammo for each quiver in their inventory.
+This enemy gains an attack bonus for each weapon in their inventory, an armor bonus for each piece of armor in their inventory, and 3 additional ammo for each quiver in their inventory (including ranged weapons).
 
     "This orc is so covered in iron and steel that you cannot tell where prosthesis ends and armor begins. It's blades are long and sharp, and within its arm-mounted crossbow some strange machination whirs disconcertingly." 
 
@@ -302,15 +302,23 @@ This enemy, and all other wretches in its pack, loses the guards hallways behavi
 
 *Looter*
 
-Armed, armored, drops gold, shouts, guards hallways, picks up weapons, picks up armor, tier 2.
+Armed, armored, drops gold, shouts, guards hallways, picks up weapons, armor, and quivers, ranged attack, reload=3, ammo=0, tier 2.
 
-This enemy spawns carrying a melee weapon. Each time it picks up a weapon, it gains a small buff to its attack, and each time it picks up a piece of armor, it gains a point of armor. As long as it is carrying at least one ranged weapon, it gains a ranged attack it can use 10 times.
+This enemy gains an attack bonus for each weapon in its inventory, an armor bonus for each piece of armor, and 3 ammo for each quiver (including ranged weapons).
 
     “In every situation, there are some who thrive. This wretch has stolen a large collection of weapons and armor from the battlefield, making him much more dangerous than his fellow soldiers.”
 
+*Death Sargent**
+
+Armed, Armored, shouts, guards hallways, tier 2.
+
+This enemy only spawns as a leader of a pack. As long as it is alive, the other members of its pack lose guards hallways and cowardly behavoirs. Their attacks gain the reckless trait, and have higher damage and accuracy.
+
+    "This officer wears ceremonial armor crafted from human bones, the grim visage of his skull mask a constant reminder of the Army's purpose. He shouts bitterly at his men in a harsh foreign tongue. Whatever he's saying sure gets them riled up..."
+    
 *Survivor*
 
-Armed, relentless, slow movement, regen=1, tier 2.
+Armed, relentless, slow movement, fast regen, tier 2.
 
     “Limping, slowly but resolutely, across the fields of carnage is a man whose broken body tells a bloody and terrible story. All fear of death has left him, and yet he lives still.”
 
@@ -322,13 +330,13 @@ Armed, stealth=2, flees when spotted, emboldened by: player health<40%, tier 2.
 
 *The Dead*
 
-Armed, armored, relentless, tier 3.
+Armed, armored, relentless, slow regen, tier 3.
 
     “Unassuming amidst the gore and debris strewn across the battlefield, this man’s arms and armor are simple, but practical and well maintained. His eyes however, betray the grim baptism of countless nights lying wounded among the rotting dead. He has felt the sickening feeling of slaying his fellow man more times than you ever hope to. His cold, empty eyes barely acknowledge you as he approaches; to him you are just another victim.”
 
 *Eliminator*
 
-Armed, armored, stealth=3, ranged attack, clip=4, reload=10, ammo=12, flees to reload, tier 3.
+Armed, armored, stealth=3, ranged attack, clip=4, reload=8, ammo=12, flees to reload, tier 3.
 
     “The Army of the Dead does not shirk from casualties, but when losses to do not yield progress, these mysterious men appear to deal with whatever is impeding the horde, and they are amply equipped and supplied. If the problem is terrain, they come as scouts. If it is a fortress, they come as saboteurs. If it is you, they come as assassins, armed with dangerous repeating crossbows.”
 
@@ -342,13 +350,13 @@ Outlaws spawn in packs. All outlaw packs are neutral and potentially hostile to 
 
 Armed, ranged attack, reload 1, ammo=4, guards hallways, stealth=1, tier 1.
 
-    “Poorly equipped, half-starved, and ragged, months of surviving outside of civilization have left this man’s body weakened, but sharpened his resolve to a killing edge. They ambush their prey in groups, firing withering volleys of arrows before closing in with knives, clubs, and hatchets. They trust the men they break bread with, but can turn on other gangs in an instant.”
+    “Poorly equipped, half-starved, and ragged, months of surviving outside of civilization have left this man’s body weakened, but sharpened his resolve to a killing edge. They ambush their prey in groups, firing withering volleys of arrows before closing in with knives, clubs, and hatchets. They trust those they break bread with, but can turn on other gangs in an instant.”
 
 *Sellsword*
 
-Armed, armored, random attack ability, shouts, tier 2.
+Armed, armored, cleave 1, shouts, tier 2.
 
-    “Well equipped and experienced, this is either a mercenary turned thug due to scarce times, or a thug turned mercenary thanks to plenty ones. Either way, he sells these outlaws raw combat ability to fill out their ranks.”
+    “Well equipped and experienced, this is either a mercenary turned thug due to scarce times, or a thug turned mercenary thanks to plenty ones. Either way, they sells these outlaws raw combat ability to fill out their ranks.”
 
 *Dashing Rogue*
 
@@ -379,7 +387,7 @@ Armed, Armored, drops gold, call to arms, stealth=1, perception=2, avoids bad ga
 **Wizards**:
 
 Found in: Tower, ruins, town raid, hellscape.
-All packs that spawn as a part of this group are neutral to one another, and all include one enemy with spells, either wandering alone or as a leader of a group of non-spellcasters.
+All packs that spawn as a part of this group are neutral to one another, and all include one enemy with spells, either wandering alone or as a leader of a group of non-spellcasters. All golems require their leader to function, and will permenantly stop taking turns once their pack leader dies.
 
 *Clay Golem*
 
