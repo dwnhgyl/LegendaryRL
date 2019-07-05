@@ -1,6 +1,6 @@
 # *Enemy Genuses*
 
-#**Orcs**:
+# **Orcs**:
 
 Found in: Cave, Ruins, Swamp, Forest, Stronghold*, Pirate*, Town Raid*, Battlefield*
 
