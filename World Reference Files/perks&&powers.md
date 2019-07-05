@@ -6,15 +6,19 @@ Spells are activated from the spell menu, putting the player into a “channelin
 
 The effects that spells have scale with spell power, a hidden stat determined by wisdom and item bonuses.
 
+**Befuddle**: 4 turns. A moderate aoe around a space in medium range. Enemies within this range gain the "befuddled" debuff for a short time. Beffudled enemies function as if the player were invisible (they can still hear the player).
+
 **Brilliance**: 4 turns. Targeted space becomes the center of a very powerful light source. A moderate area of effect around the origin of this light source (such that it covers the same tiles as the ones "brightly lit" by the light source) grants a moderate accuracy malus to anything inside of it, except the caster.
 
 **Call Lightning**: 5 turns. Deals a large amount of lightning damage in a small aoe radius, centered on a targeted point that can be placed through obstructions, but must be in an area without a ceiling, and must be within line of sight.
 
 **Call Fog**: 4 turns. Creates a large hidden area of effect centered on a targeted space (place anywhere, line of sight unnecessary). Spaces in this area of effect will randomly emit “Fog” gas for a long duration. The result is fog appearing in that area over a number of turns, potentially spilling into areas outside the radius if possible. 3 consecutive tiles of fog block line of sight for everything but the player, and any creature standing a fog space receives a significant hide bonus and a small sneak bonus. Unlike other effects that alter terrain, this makes no noise.
 
-**Chilling Coalescence**: 5 turns. All enemies in a small aoe suffer the "coalescence" debuff for a short time, taking light cold damage and suffering slow movement for the duration. Empty tiles within the aoe have a 20% chance of becoming ice block walls for the duration of the spell.
+**Chilling Coalescence**: 5 turns. Target a point in medium range. All enemies in a small aoe around that point suffer the "coalescence" debuff for a short time, taking light cold damage and suffering slow movement for the duration. Empty tiles within the aoe have a 20% chance of becoming ice block walls for the duration of the spell.
 
 **Conjure Explosive**: 6 turns. Target an empty space in sight. A "magic bomb" is spawned there. On its turn, the bomb has a 10% chance to explode if the player is still in its blast radius. If the player is not, it has a 50% chance to explode. When it does explode, it deals large physical and fire damage in a big AOE around it. The bomb has moderate hide and sneak (not modified by spell power) and a small pool of HP. If they spot it, Relentless and Ranged enemies will attack it, and all other enemies will flee it. If destroyed, the bomb immediately detonates, but with half its spell power effect.
+
+**Deadly Flood**: 4 turns. A large aoe around a point in medium range. Does not go through walls. Has a minimum number of spaces it will affect equal to its unobstructed aoe: if it is blocked by walls it will fill adjacent empty spaces until this condition is met. All affected spaces become "Spell Acid" terrain. This works just like an acid pool, except damage scales with spellpower, and the caster takes only (50-Spellpower)% damage. This effect lasts for a moderate amount of time.
 
 **Earthwall**: 4 turns. The player is prompted to select a number of continuous spaces. "Stone Pillars" immediately spawn in these spaces, functioning as walls. Enemies standing in one of these spaces take light physical damage and are moved to one of the nearest empty spaces. The stone pillars remain for a moderate duration. This spell comes with a special spell, "Dispel Pillar", that takes 1 turn to cast and removes a target pillar.
 
@@ -30,13 +34,15 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Chilling Grip**: 2 turns. Targeted enemy in sight immediately takes light cold damage, ignoring armor.
 
-**Conjure Ammunition**: 7 turns. Spawns a full quiver of a type of ammo corresponding to an equipped ranged weapon (if no ammo is equipped, spawns a Belt of Knives). This ammo will have a small enhancement bonus determined by spellpower. This object is temporary and will disappear between levels.
+**Conjure Ammunition**: 7 turns. Spawns a full quiver of a type of ammo corresponding to an equipped ranged weapon (if no such weapon is equipped, spawns a Belt of Knives). This ammo will have a small enhancement bonus determined by spellpower. This object is temporary and will disappear between levels.
 
 **Premonition**: 6 turns. When cast, the game remembers the complete state of the level that instant. Play continues normally for a short duration, except that the player has a un-removable "premonition" buff for a short duration. When the buff expires or the player dies, the game returns to the state when premonition was cast.
 
 **Static Charge**: 5 turns. Applies a buff to the caster for a short duration. Each turn, an enemy within a short range will be targeted by a highly accurate instantaneous projectile that deals light lighting damage.
 
 **Succor**: 11 turns. Grants a small amount of temporary hit points to the player for a long duration.
+
+**Treachery**: 8 turns. Target an enemy in line of sight. That enemy gains the "treachery" debuff for a long duration. All enemies are hostile to the target, and the target is hostile to all enemies.
 
 **Wind Step**: 4 turns. Causes targeted creature (including the player) to gain the Wind Step buff for a short duration. This buff makes movement instant on a 2 turn cooldown, grants Flight, and grants a moderate dodge bonus.
 
@@ -46,11 +52,11 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Flash**: 2 turns. A small area of effect a short range away from the caster. Spaces in this area become Brightly Lit for 1 round. Enemies in this area take light fire damage, and are blinded for a short duration if the space they were standing in was formerly Dark, or they have Light Sensitivity.
 
-**Scouring Wind**: 4 turns. A targeted enemy is afflicted with the "scoured" debuff for a very short period of time. This debuff has the following effects each round: the enemy will take light physical damage each round. The enemy will be disarmed if possible. The enemy will suffer a small amount of armor corrosion. The enemy will be knocked back very little, in a direction set by the caster upon casting the spell. 
+**Scouring Wind**: 4 turns. A targeted enemy is afflicted with the "scoured" debuff for a very short period of time. This debuff has the following effects each round: the enemy will take light physical damage each round. The enemy will be disarmed if possible. The enemy will suffer a small amount of armor corrosion. The enemy will be knocked back with a low probability each turn, in a direction set by the caster upon casting the spell.
 
 **Shardspray**: 3 turns. This spell creates a scaling number of projectiles that immediately fire off in random directions. If cast on the floor, these can be in any of 16 directions (the 8 movement directions, plus 1 in between each of them). If cast on a wall, adjacent walls will prevent shards from firing in their direction, resulting in a more concentrated burst of shards. Each shard deals light physical damage and has high accuracy. These projectiles go through the player without triggering any effects. With this spell, the projectiles originate adjacent to the space targeted, and thus an enemy on a targetted floor space will be undamaged.
 
-**Lava Fissure**: 5 turns. Targetted space in short range, no los required. A small area around the targetted space becomes highly dangerous "spell-lava" terrain. This terrain is identical to lava, except that all damage it causes scales with spellpower and is reduced by (70+Spellpower)% when applied to the player.
+**Eruption**: 5 turns. Targetted space in short range, no los required. A small area around the targetted space becomes highly dangerous "spell-lava" terrain. This terrain is identical to lava, except that all damage it causes scales with spellpower and is reduced by (50+Spellpower)% when applied to the player. The lava terrain will become stone terrain after a short duration.
 
 **Bless Equipment**: 10 turns. Applies a “blessed” trait to a piece of equipment, increasing its effective enhancement bonus by a figure that scales with spellpower. This trait is removed when the spell is cast again, and between levels. (Enemies who use a scroll of bless equipment gain a permanent attack buff, and lose “keeps distance”)
 
@@ -85,9 +91,11 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Crowd Cover**: If an enemy is aware of hostiles besides the player, and those hostiles are within 6 spaces of the player, it will ignore the player to attack them, even if the player is closer.
 
-**Disguise**: At the start of each mission, a number of "disguise" items spawn on the floor of the level. Upon pick-up, these items disappear, and a random enemy pack on that floor will receive the "Fooled" status. Fooled enemies do not check the player's stealth, and do not become aware on their own. If a fooled enemy becomes aware, they lose the fooled status. The number of disguise items in a level depends on your Cunning.
+**Disguise**: At the start of each mission, a number of "disguise" items spawn on the floor of the level. Upon pick-up, these items disappear, and a random enemy pack on that floor will receive the "Fooled" status. Fooled enemies do not check the player's stealth, and do not become aware on their own. Shouts, taking damage, etc. can still make them aware of a player in their vision zone. If a fooled enemy becomes aware, they lose the fooled status. The number of disguise items in a level depends on your Cunning.
 
 **Healer's Art**: Activated from the special abilities menu. Causes the player to wait for 30 turns, and then heals the player HP equal to 20 times their Cunning. Usable once per mission.
+
+**Leg It**: Speed bonus from Sprinting increases by 25. You gain a cunning-scaled dodge bonus while sprinting. When standing still, 2 stacks of fatigue are removed instead of 1.
 
 **Looter**: Slightly improves the rate at which Cunning increases the amount of loot that spawns on a level.
 
@@ -115,11 +123,11 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Trapsmith**: Used from the special abilities menu. Prompts the player to select an adjacent trap. Different traps can be disabled, triggered, re-enabled, or even rendered "friendly", depending on the trap. Some traps can be taken, and will appear in the inventory as items with 1 encumberance. When used, these items allow the player to place the trap on an adjacent space. Disabled traps now appear in levels, depending on your Cunning.
 
-⋅⋅⋅**Efficacy Unwitnessed**: All traps that deal damage now allow the "upgrade" action. This takes several turns and results in the trap dealing addtional damage according to the player's cunning. Disabled traps spawn more often. 
+⋅⋅⋅ **Efficacy Unwitnessed**: All traps that deal damage now allow the "upgrade" action. This takes several turns and results in the trap dealing addtional damage according to the player's cunning. Disabled traps spawn more often. 
 
 **Quick Hands**: Automatically activates when you draw a weapon, put one away, throw something, or spend a turn reloading. That action becomes instant. After it activates, it goes on cooldown for two turns.
 
-**River’s Current**: The base speed bonus from sprinting is increased (20->30). Sprinting is not unstealthy (Same hide/sneak malus as normal movement). Sprinting grants a dodge bonus for its duration. You suffer only 3 stacks of fatigue for each 5 rounds spent sprinting.
+**River’s Current**: The base speed bonus from sprinting is increased (25->35). Sprinting is not unstealthy (Same hide/sneak malus as normal movement). Sprinting grants a dodge bonus for its duration. You suffer only 3 stacks of fatigue for each 5 rounds spent sprinting.
 
 
 ## *Feats*
@@ -134,7 +142,7 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Berserk**: When you make a “Reckless” attack, any critical attack except “Cautious”, or spend a turn bonestuck, you gain a stack of the “Berserk” buff that grants small bonuses to dodge and armor and large bonuses to melee damage and accuracy. You can accrue a number of berserk stacks equal to your Valor. Stacks are lost at a rate of 1 each round you do not gain a stack.
 
-⋅⋅⋅**Blood Rage**: Whenever you kill an enemy with an attack, gain stacks of Berserk equal to its tier+2. Whenever you take damage from an attack, gain a stacks of berserk equal to 1/10th the damage, rounded down.
+⋅⋅⋅ **Blood Rage**: Whenever you kill an enemy with an attack, gain stacks of Berserk equal to its tier+2. Whenever you take damage from an attack, gain a stacks of berserk equal to 1/10th the damage, rounded down.
 
 **Sunder**: Unlockes a basic and a critical strike option. The basic option has a damage mod 125% and causes the player to drop their guard. It never bypasses armor. When it lands on an enemy with armor, it applies stacks of armor damage equal to half of your valor (rounded up). The critical strike is similar except it has a 200% damage mod, applies stacks of armor damage equal to your valor, and stuns the target for a round.
 
@@ -142,7 +150,7 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Toe-to-Toe**: For each enemy that is adjacent to you, aware, and hostile, you gain a bonus to Accuracy and Parry. This bonus is higher for higher-tier enemies. You are immune to disarm.
 
-⋅⋅⋅**Tooth-to-Tooth**: You now also receive a bonus to the damage modifier of all your attacks for each enemy in melee with you. When blinded, you can still see spaces adjacent to you. When stunned, you can make a melee attack instead of standing still.
+⋅⋅⋅ **Tooth-to-Tooth**: You now also receive a bonus to the damage modifier of all your attacks for each enemy in melee with you. When blinded, you can still see spaces adjacent to you. When stunned, you can make a melee attack instead of standing still.
 
 **Overwhelm**: Every melee attack, regardless of outcome against an enemy has a 20% chance to apply the "Overwhelmed" debuff to an enemy for exactly 2 turns. Overwhelmed enemies have their guard down, cannot cast spells, and cannot move.
 
