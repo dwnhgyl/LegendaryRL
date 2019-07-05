@@ -1,6 +1,6 @@
 # *Enemy Genuses*
 
-**Orcs**:
+#**Orcs**:
 
 Found in: Cave, Ruins, Swamp, Forest, Stronghold*, Pirate*, Town Raid*, Battlefield*
 
@@ -104,7 +104,7 @@ Armed, Armored, dark vision, light blindness, Slow movement, Slow attack, reckle
 
 Armed, Armored, dark vision, light sensitivity, keeps distance, ranged attack, ammo=5, reload=5, tier 3.
 
-These orcs only spawn as leaders of a pack. If it reaches the “Duel” result during parley with a leader who is not an Orc Priest, that orc and its pack immediately join the Orc Priest’s band, as if it were a lower tier orc. This enemy will not reload if aware of the player. This enemy spends its turn in a "Commanding" state when not moving or shooting, which grants the other members of its pack a bonust to Accuracy and Dodge.
+These orcs only spawn as leaders of a pack. If it reaches the “Duel” result during parley with a leader who is not an Orc Elder, that orc and its pack immediately join the Orc Priest’s band, as if it were a lower tier orc. This enemy will not reload if aware of the player. This enemy spends its turn in a "Commanding" state when not moving or shooting, which grants the other members of its pack a bonust to Accuracy and Dodge.
 
     "The visage of this ancient orc has been weathered by years in the wilderness and maimed by countless raids. It busies itself constantly with the sisyphean task of enforcing military discipline among the ranks of its raucous following."
     
@@ -115,6 +115,12 @@ Armed, Armored, dark vision, collects weapons, armor, and quivers, ranged attack
 This enemy gains an attack bonus for each weapon in their inventory, an armor bonus for each piece of armor in their inventory, and 3 additional ammo for each quiver in their inventory (including ranged weapons).
 
     "This orc is so covered in iron and steel that you cannot tell where prosthesis ends and armor begins. It's blades are long and sharp, and within its arm-mounted crossbow some strange machination whirs disconcertingly." 
+
+*Orc Sorceror*
+
+Dark vision, keeps distance, closes distance if can't cast, tier 3.
+
+This enemy has the enemy spells "enrage ally" "heal ally" "heal self" and "cause fear". These orcs only spawn as leaders of a pack. If it reaches the “Duel” result during parley with a leader who is not an Orc Sorceror or an Orc Elder, that orc and its pack immediately join the Orc Priest’s band, as if it were a lower tier orc.
 
 # **Kobolds**:
 
