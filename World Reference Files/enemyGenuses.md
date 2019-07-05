@@ -122,6 +122,8 @@ Dark vision, keeps distance, closes distance if can't cast, tier 3.
 
 This enemy has the enemy spells "enrage ally" "heal ally" "heal self" and "cause fear". These orcs only spawn as leaders of a pack. If it reaches the “Duel” result during parley with a leader who is not an Orc Sorceror or an Orc Elder, that orc and its pack immediately join the Orc Priest’s band, as if it were a lower tier orc.
 
+    "Black ash swirls around this creature, obscuring eyes within that burn like embers. The ash flows through its fingers and out into the bodies of its followers, who gallumph about jovially despite countless grievous wounds. What kind of dead god grants miracles like these?"
+
 # **Kobolds**:
 
 Found in: Cave, Ruins, Forest, Swamp, Stronghold
