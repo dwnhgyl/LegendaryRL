@@ -13,7 +13,7 @@ Orcs spawn in packs that are friendly to each other, with one higher tier orc as
 If either leader spots the player while “Parleying” the “Accord” result is immediately chosen. Every orc in both packs has perception 0 for the duration of the parley.
 When an orc pack’s leader is killed outside of a parley, nothing happens if the pack is hunting the player. But the second a leaderless pack is not hunting the player, the pack undergoes succession. Succession takes place as follows:
 
-If there is only one of the highest tier of orcs present, that orc becomes the new leader. If ALL the orcs are the same tier, a random leader is chosen. Otherwise, all orcs of the highest present tier become hostile and fight to the death. When only one remains, that orc becomes leader.
+If there is only one of the highest tier of orcs present, that orc becomes the new leader. If ALL the orcs are the same tier, a random leader is chosen. Otherwise, all orcs of the highest present tier become hostile and fight to the death. When only one remains, that orc becomes leader, and heals to full HP. The new leader has none of the Accords that the old one had.
 
 ALL orcs described here are blinded for 1-4 rounds whenever they receive lightening damage.
 *When orcs spawn as the main genus in these environments, fewer orcs will spawn and they will all be friendly to each other. When they are a side genus, they spawn as normal.
