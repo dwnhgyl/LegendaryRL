@@ -412,8 +412,17 @@ Grants immunity to a damage element.
 **Armor Piercing** (Melee weapons, ranged weapons, quivers)
 Ignores the first 40 points of armor of any enemy struck.
 
+**Barbed** (weapons)
+Deals the player 4 damage each time they attack with it. The weapon's base damage is increased by 20%.
+
+**Burning** (weapons)
+When equipped, this weapon functions as a light source. It deals bonus fire damage to anything it hits. If thrown, it will light fires on burnable terrain.
+
 **Camoflaged** (Body Armor, headgear)
 Grants a hide bonus.
+
+**Contemptuous** (Armor, shields)
+When the player is struck by an attack, deals 15 irreducible to the attacker. Works on melee, ranged attacks, and spells.
 
 **Deflecting** (Armor, shields)
 If an attack would deal the bearer less than 15 damage, negate that damage.
@@ -424,6 +433,9 @@ Fortifying equipment increases the player's max HP by 20 for as long as it is eq
 **Lightweight** (Any equipment with 2 or more Enc)
 Lowers the Enc value of the equipment by 3, minimum 0.
 
+**Locked** (gloves)
+Makes the player immune to disarm, and increases the effective enhancement of any weapon equipped by +2. It takes 1 extra turn to equip or unequip this equipment, and 1 extra turn to equip or unequip any weapon while Locked equipment is worn. Nothing can be thrown while this equipment is worn.
+
 **Magnetic** (Armor)
 When hit in melee, has a 100%/enemy tier chance to inflict disarm to an armed attacker.
 
@@ -431,13 +443,16 @@ When hit in melee, has a 100%/enemy tier chance to inflict disarm to an armed at
 Upon parrying a melee attack, has a 100%/enemy tier chance to inflict disarm to an armed attacker.
 
 **Mind-expanding** (Headgear)
-Grants +4 spell power when equipped.
+Grants +3 spell power when equipped.
 
 **Sealed** (Headgear)
 Renders the wearer immune to all gas effects, including positive ones.
 
+**Trackless** (Footwear)
+Enemies spend 1/2 less time in the "searching" state after losing track of the player.
+
 **Venemous** (One-handed weapons, quivers)
 On hit, these weapons apply a "deadly venom" effect, which deals 5 poison damage each round for 5 rounds.
 
-**Viscious** (Melee weapons)
-On hit, +20% chance to become bonestuck. +10% (compounded) damage mod, +20 damage and +20% (compounded) damage mod whenever bonestuck.
+**Vicious** (Melee weapons)
+On hit, +20% chance to become bonestuck. +10% base damage, +20 bonus damage damage whenever bonestuck.
