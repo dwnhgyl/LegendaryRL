@@ -448,6 +448,8 @@ Grants +3 spell power when equipped.
 **Sealed** (Headgear)
 Renders the wearer immune to all gas effects, including positive ones.
 
+**Thundering** (Weapons) The weapon deals additional lightning damage. Attacking with the weapon is ridiculously noisy.
+
 **Trackless** (Footwear)
 Enemies spend 1/2 less time in the "searching" state after losing track of the player.
 
