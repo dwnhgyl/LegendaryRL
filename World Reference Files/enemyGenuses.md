@@ -294,11 +294,16 @@ This enemy can cast “acid bolt” after channeling for 3 rounds, and does so a
 
     “This absurd creature has great bulbous body, massive wings, and a great long neck, all the better for hocking deadly loogies at anyone unfortunate enough to draw its ire. Kobolds revere these creatures as gods. Probably gods of good table manners.”
 
-**The Army of the Dead**:
+# **The Army of the Dead**:
 
 Found in: Stronghold, Town Raid, Battlefield
 
 All army of the dead units are friendly to each other.
+
+*Walking Corpse*
+Armed, Slow Movement, tier 0.
+
+    "This wounded man makes for a sad sight, limping across the battlefield in filthy rags, maimed in a dozen places. His rags bear countless layers of old, black blood, but the fresh red on his weapon is not his own. Perhaps it would be best to use a bow..."
 
 *Wretch*
 
@@ -308,9 +313,17 @@ This enemy, and all other wretches in its pack, loses the guards hallways behavi
 
     “Of all the creatures that attack in great raucous swarms, few possess the size and intellect of a fully-grown human being. This dirty man wielding a crude weapon is a soldier in the Army of the Dead, and has sworn an oath to die on the battlefield. His caution is born of cunning, not fear, and he is quick to abandon it if needs must.”
 
+*Dead Boy*
+
+Armed, shouts, relentless, tier 1.
+
+When killed with a weapon attack, the attacker is stunned.
+
+    "A youthful face stands among the ranks of the Dead. Black gods, he can't be older than seventeen winters. His bright eyes are filled with fanatic abandon, and white knuckles grip his scavenged weapon."
+
 *Looter*
 
-Armed, armored, drops gold, shouts, guards hallways, picks up weapons, armor, and quivers, ranged attack, reload=3, ammo=0, tier 2.
+Armed, armored, drops gold, shouts, guards hallways, reach attack, parry ranged, picks up weapons, armor, and quivers, ranged attack, reload=3, ammo=0, tier 2.
 
 This enemy gains an attack bonus for each weapon in its inventory, an armor bonus for each piece of armor, and 3 ammo for each quiver (including ranged weapons).
 
@@ -328,7 +341,7 @@ This enemy only spawns as a leader of a pack. As long as it is alive, the other 
 
 Armed, relentless, slow movement, fast regen, tier 2.
 
-    “Limping, slowly but resolutely, across the fields of carnage is a man whose broken body tells a bloody and terrible story. All fear of death has left him, and yet he lives still.”
+    “Limping, slowly but resolutely, across the fields of carnage is a man whose broken body tells a bloody and terrible story. All fear of death has left him, and yet he does not die.”
 
 *Craven*
 
@@ -336,9 +349,14 @@ Armed, stealth=2, flees when spotted, emboldened by: player health<40%, tier 2.
 
     “The Army of the Dead are not all so stoic. This one takes advantage of the chaos to stab the enemy in the back, and lets his battle-brothers do the dying, bitterly prolonging his own cursed existence.”
 
+*Chained Corpse*
+Armored, slow regen, tier 3.
+
+    "Unimpeded by lost limbs, this man moves about on his ramshackle prosthetics with surprising agility. A chipped, jagged blade is lashed to his handless arm with chains. His scarred face has just enough tissue remaining to contort into a mask of rage as he attacks."
+
 *The Dead*
 
-Armed, armored, relentless, slow regen, tier 3.
+Armed, armored, relentless, slow regen, tier 4.
 
     “Unassuming amidst the gore and debris strewn across the battlefield, this man’s arms and armor are simple, but practical and well maintained. His eyes however, betray the grim baptism of countless nights lying wounded among the rotting dead. He has felt the sickening feeling of slaying his fellow man more times than you ever hope to. His cold, empty eyes barely acknowledge you as he approaches; to him you are just another victim.”
 
@@ -347,6 +365,14 @@ Armed, armored, relentless, slow regen, tier 3.
 Armed, armored, stealth=3, ranged attack, clip=4, reload=8, ammo=12, flees to reload, tier 3.
 
     “The Army of the Dead does not shirk from casualties, but when losses to do not yield progress, these mysterious men appear to deal with whatever is impeding the horde, and they are amply equipped and supplied. If the problem is terrain, they come as scouts. If it is a fortress, they come as saboteurs. If it is you, they come as assassins, armed with dangerous repeating crossbows.”
+
+*Death Priestess*
+
+Keeps distance, Call to arms, 2 random enemy spells, death curse, tier 3.
+
+Every time an Army of the Dead enemy dies in a Death Priestess's awareness zones, she gains a stack of "Oaths Kept" which increases her spell power.
+
+    "A spiritual leader among the Dead, her skeletal trappings and booming voice a constant reminder to the rank and file of the oath they made to their god. The tales say the men of the east's god is same one that rules the west. Strike down a priest of your own god, and you will surely be cursed. You doubt she has any compunctions about killing you, however."
 
 **Outlaws**:
 
@@ -640,7 +666,7 @@ This enemy's attack is 40% less likely to apply the target's armor to its damage
 
 Cowardly, fast movement, drops gold, tier 0.
 
-    "A large, four-legged beast with a thick, luxious coat of fur. The color is actually green, red, or white, depending on the season and the breed. The 'silver' refers to the coin a hunter can make by hawking even the messiest of kills."
+    "A large, four-legged beast with a thick, luxurious coat of fur. The color is actually green, red, or white, depending on the season and the breed. The 'silver' refers to the coin a hunter can make by hawking even the messiest of kills."
 
 *Bladefang*
 
