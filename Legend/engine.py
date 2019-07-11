@@ -281,11 +281,11 @@ def get_font_size():
     """ gets font size from sys.argv """
 
     if "--font=small" in sys.argv:
-        font_path = str("Legend" + os.sep + "arial10x10.png")
+        font_path = "arial10x10.png"
     elif "--font=large" in sys.argv:
-        font_path = str("Legend" + os.sep + "dejavu16x16_gs_tc.png")
+        font_path = "dejavu16x16_gs_tc.png"
     else:
-        font_path = str("Legend" + os.sep + "arial12x12.png")
+        font_path = "arial12x12.png"
 
     return font_path
 
