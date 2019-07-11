@@ -1,7 +1,13 @@
 
 import os
 
-os.system("reset")
+if os.sep == '/':
+
+    os.system("reset")
+
+elif os.sep == '\\':
+
+    os.system("cls")
 
 print("LEGENDARY ROGUELIKE\n")
 print("(P)lay\n")
