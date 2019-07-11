@@ -9,7 +9,7 @@ print("Play with (s)mall font\n")
 print("Play with (l)arge font\n")
 print("(Q)uit\n")
 
-launching_game = False
+launching_game = "echo Good-bye!"
 
 while True:
 
