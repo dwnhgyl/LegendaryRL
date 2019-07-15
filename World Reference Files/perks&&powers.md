@@ -132,11 +132,15 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 ## *Feats*
 
+**Arsenal**: For each weapon in your inventory with an encumberance of at least 1, treat your valor as 1 higher for the purposes of ignoring encumberance penalties. Switching weapons is a free action. 
+
 **Charge**: When moving while sprinting, you gain stacks of a buff which increases the damage modifier of the next melee attack you make. An attack benefiting from any number of these stacks increases its Cleave value by 1. You can accrue a number of these stacks up to your Valor. While fatigued, you do not take penalties to your combat stats.
 
 **Disarm**: Unlocks a normal attack and a critical attack. The normal attack has a 20% damage modifier, but applies the "Disarmed" debuff to any armed enemy it hits. The critical attack has a 130% damage modifier, and applies the "Severed Arm" debuff to enemies it hits. This debuff works like disarm, but it is permanent.
 
 **Discretion**: Valor now lowers effective encumberance for all penalties, including stealth and speed penalties.
+
+**Duelist**: Once per turn, you parry an attack as if your valor were 50% higher. This applies to first attack that targets you after your turn ends.
 
 **Battle Stamina**: Whenever you kill an enemy with a weapon attack, heal HP equal to 5 plus the enemy's tier, times the enemy's tier, plus 3. So for tiers 0, 1, 2, and 3, that's 3, 6, 17, and 27.
 
@@ -147,6 +151,10 @@ The effects that spells have scale with spell power, a hidden stat determined by
 **Sunder**: Unlockes a basic and a critical strike option. The basic option has a damage mod 125% and causes the player to drop their guard. It never bypasses armor. When it lands on an enemy with armor, it applies stacks of armor damage equal to half of your valor (rounded up). The critical strike is similar except it has a 200% damage mod, applies stacks of armor damage equal to your valor, and stuns the target for a round.
 
 **Soften 'Em Up**: Whenever you hit an enemy with a ranged weapon attack, they gain the "Softened Up" debuff permanently. When attacking a softened up enemy, the player gets a bonus to accuracy and damage mod. This only affects melee attacks, and only when the softened enemy is below 60% HP.
+
+**Throwing Arm**: Thrown weapons and potions travel faster and max throw range is increased. Grants a valor-based bonus to the accuracy and damage of thrown weapons.
+
+⋅⋅⋅ **Throw Anything**: Any item or piece of equipment can be thrown if it has a an encumberance value. Items with higher encumberance values will deal more damage, but have a shorter range. Items named "Rock" "Log" etc. will spawn on every map, having no function but having very high encumberance values.
 
 **Toe-to-Toe**: For each enemy that is adjacent to you, aware, and hostile, you gain a bonus to Accuracy and Parry. This bonus is higher for higher-tier enemies. You are immune to disarm.
 
