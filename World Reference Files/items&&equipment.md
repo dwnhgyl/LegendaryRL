@@ -412,11 +412,17 @@ Grants immunity to a damage element.
 **Armor Piercing** (Melee weapons, ranged weapons, quivers)
 Ignores the first 40 points of armor of any enemy struck.
 
+**Articulated** (Melee weapons)
+This weapon has lower accuracy and slightly more base damage. When an attack with this weapon is parried, the defender is disarmed 35% of the time.
+
 **Barbed** (weapons)
 Deals the player 4 damage each time they attack with it. The weapon's base damage is increased by 20%.
 
+**Balanced** (Melee weapons)
+This weapon can be thrown, and further than melee weapons normally can. It no longer has a throw malus, and receives bonus accuracy and damage when thrown. 
+
 **Burning** (weapons)
-When equipped, this weapon functions as a light source. It deals bonus fire damage to anything it hits. If thrown, it will light fires on burnable terrain.
+When equipped, this weapon functions as a light source. It deals bonus fire damage to anything it hits. If thrown, it will light fires on burnable terrain, and will function as open flame for 3 rounds before returning to normal.
 
 **Camoflaged** (Body Armor, headgear)
 Grants a hide bonus.
@@ -445,8 +451,17 @@ Upon parrying a melee attack, has a 100%/enemy tier chance to inflict disarm to 
 **Mind-expanding** (Headgear)
 Grants +3 spell power when equipped.
 
+**Returning** (Throwable Melee weapons)
+When thrown, returns to the player's inventory after 2-5 turns.
+
 **Sealed** (Headgear)
 Renders the wearer immune to all gas effects, including positive ones.
+
+**Shiny** (conventional shields, body armor, helmets)
+When the wearer is in bright light, they function as a light source with a moderate radius. All enemies within that radius suffer an accuracy penalty.
+
+**Sprightly** (Boots)
+Adds an additional 15 speed to both walking and sprinting.
 
 **Thundering** (Weapons) The weapon deals additional lightning damage. Attacking with the weapon is ridiculously noisy.
 
