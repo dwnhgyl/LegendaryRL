@@ -303,7 +303,7 @@ def main():
 
     con = libtcod.console.Console(constants['screen_width'], constants['screen_height'])
 
-    panel = libtcod.console_new(constants['screen_width'], constants['panel_height'])
+    panel = libtcod.console.Console(constants['screen_width'], constants['panel_height'])
 
     player = None
     entities = []
