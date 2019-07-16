@@ -2,8 +2,7 @@
 *.dat*
 
 # Personal scripts
-show_project_tree.sh
-launch.sh
+tcod_warnings-20190716.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
