@@ -301,7 +301,8 @@ def main():
     libtcod.console_init_root(constants['screen_width'], constants['screen_height'], \
             constants['window_title'], False, libtcod.RENDERER_SDL2, vsync=False)
 
-    con = libtcod.console_new(constants['screen_width'], constants['screen_height'])
+    con = libtcod.console.Console(constants['screen_width'], constants['screen_height'])
+
     panel = libtcod.console_new(constants['screen_width'], constants['panel_height'])
 
     player = None
