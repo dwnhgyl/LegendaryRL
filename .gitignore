@@ -2,7 +2,6 @@
 *.dat*
 
 # Personal scripts
-tcod_warnings-20190716.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
