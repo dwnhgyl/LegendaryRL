@@ -47,7 +47,7 @@ The effects that spells have scale with spell power, a hidden stat determined by
 **Wind Step**: 4 turns. Causes targeted creature (including the player) to gain the Wind Step buff for a short duration. This buff makes movement instant on a 2 turn cooldown, grants Flight, and grants a moderate dodge bonus.
 
 **Cold Wind**: 5 turns. The player is prompted to target a space, and then set a direction. A special effect fills a moderate-size, roughly rectangular area. Enemies within this effect take light cold damage and are knocked back a very short distance in the direction that was set. The player is unaffected.
-
+  
 **Dispel**: 3 turns. Affects a targeted space within line of sight. An instant anti-magic effect is applied to all creatures and objects in that space, removing any ongoing magical effects. Magical enemies gain the “nullified” debuff for a short duration, losing the ability to channel any spells, and possibly certain intrinsics. Undead are dealt light damage. Constructs are dealt heavy damage.
 
 **Flash**: 2 turns. A small area of effect a short range away from the caster. Spaces in this area become Brightly Lit for 1 round. Enemies in this area take light fire damage, and are blinded for a short duration if the space they were standing in was formerly Dark, or they have Light Sensitivity.
@@ -74,7 +74,7 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Command**: 6 turns. Target an enemy in line-of-sight, within a moderate range. For a short duration, this enemy is afflicted with the command status. An enemy with this status does not act on its own, but prompts the player to act for it each time it would take a turn. Actions taken this way can anger neutrals, causing them to become permantly hostile to the commanded enemy's pack. Creatures friendly to the commanded target, including the target's own packmates, can become temporarily angered and hostile, ONLY to the commanded target. They will become friendly again when the effect ends.
 
-**Read Magic**: 2 turns. Once cast, the player is prompted to choose a scroll or scribe’s scraps from their inventory. If an unidentified scroll is chosen, that scroll is identified. If an identified scroll is chosen, the player begins to cast that spell as if from their spell list without consuming the scroll (this is cast at 75% normal spellpower). If scribe’s scraps are chosen, the player is prompted to turn it into one of three scrolls (taken from the list of identified scrolls).
+**Read Magic**: 2 turns. Once cast, the player is prompted to choose a scroll from their inventory. If an unidentified scroll is chosen, that scroll is identified. If an identified scroll is chosen, the player begins to cast that spell as if from their spell list without consuming the scroll (this is cast at 75% normal spellpower).
 
 
 ## *Tricks*
@@ -93,7 +93,7 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 **Disguise**: At the start of each mission, a number of "disguise" items spawn on the floor of the level. Upon pick-up, these items disappear, and a random enemy pack on that floor will receive the "Fooled" status. Fooled enemies do not check the player's stealth, and do not become aware on their own. Shouts, taking damage, etc. can still make them aware of a player in their vision zone. If a fooled enemy becomes aware, they lose the fooled status. The number of disguise items in a level depends on your Cunning.
 
-**Healer's Art**: Activated from the special abilities menu. Causes the player to wait for 30 turns, and then heals the player HP equal to 20 times their Cunning. Usable once per mission.
+**Healer's Art**: At the start of each mission, a number of "healing supply" items spawn on the floor of the level. Healing supplies are an item with 1 encumberance. When used from the inventory, the player enters a "Healing" state, much like channeling or reloading. If they stand still for 10 turns, the healing supplies are consumed and you recover 25 hit points. The number of healing items in a level depends on your Cunning.
 
 **Leg It**: Speed bonus from Sprinting increases by 25. You gain a cunning-scaled dodge bonus while sprinting. When standing still, 2 stacks of fatigue are removed instead of 1.
 
@@ -132,7 +132,9 @@ The effects that spells have scale with spell power, a hidden stat determined by
 
 ## *Feats*
 
-**Arsenal**: For each weapon in your inventory with an encumberance of at least 1, treat your valor as 1 higher for the purposes of ignoring encumberance penalties. Switching weapons is a free action. 
+**Arsenal**: For each weapon in your inventory with an encumberance of at least 1, treat your valor as 1 higher for the purposes of ignoring encumberance penalties. Switching weapons is a free action.
+
+**Brigand**: All enemies drop a tiny amount of gold on death, depending on their tier.
 
 **Charge**: When moving while sprinting, you gain stacks of a buff which increases the damage modifier of the next melee attack you make. An attack benefiting from any number of these stacks increases its Cleave value by 1. You can accrue a number of these stacks up to your Valor. While fatigued, you do not take penalties to your combat stats.
 
