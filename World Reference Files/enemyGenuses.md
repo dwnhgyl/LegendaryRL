@@ -380,23 +380,47 @@ Found in: Forest, Cave, Coast, Pirate, Stronghold, Ruins, Town Raid.
 
 Outlaws spawn in packs. All outlaw packs are neutral and potentially hostile to each other.
 
+*Bait*
+
+Armed, guards hallways, monologues, shouts, repulsive, tier 0.
+
+This enemy grants a large stealth bonus to all other outlaws in its pack for as long as it is alive.
+
+    "Ah yes. An innocent traveler moaning loudly about their fate, trapped here by circumstance and totally helpless. And unmolested. In the middle of bandit country. Doubtless there are a group of bandits lying in ambush nearby."
+
 *Bandit*
 
 Armed, ranged attack, reload 1, ammo=4, guards hallways, stealth=1, tier 1.
 
     “Poorly equipped, half-starved, and ragged, months of surviving outside of civilization have left this man’s body weakened, but sharpened his resolve to a killing edge. They ambush their prey in groups, firing withering volleys of arrows before closing in with knives, clubs, and hatchets. They trust those they break bread with, but can turn on other gangs in an instant.”
+    
+*Bandit Captain*
+
+Armed, ranged attack, reload 1, ammo=6, guards hallways, perception=1, stealth=2, tier 2
+
+This enemy only spawns as a leader of a pack of outlaws. As long as it is alive, outlaws in its pack have increased stealth value.
+
+    "A bandit that has survived long enough to be at home in this savage place. They know the terrain, how to keep their bellies full, their feet dry, their blades sharp... how to organize a proper ambush. That is what is happening to you right now, if you hadn't guessed."
 
 *Sellsword*
 
-Armed, armored, cleave 1, shouts, tier 2.
+Armed, armored, cleave 1, shouts, stealth=1, tier 2.
 
-    “Well equipped and experienced, this is either a mercenary turned thug due to scarce times, or a thug turned mercenary thanks to plenty ones. Either way, they sells these outlaws raw combat ability to fill out their ranks.”
+    “Well equipped and experienced, this is either a mercenary turned thug due to scarce times, or a thug turned mercenary thanks to plenty ones. Either way, they sell these outlaws raw combat ability to fill out their ranks.”
 
 *Dashing Rogue*
 
 Armed, monologues, lunge attack, disarm attack, flees when hp<35%, immune to drowning, entanglement, and blinding, tier 2.
 
     “In the interest of affecting a roguish persona, this outlaw has cultivated a respectable mustache and invested in multiple gold teeth. While these things might impress frightened travelers, you’re more concerned with his rapier, which he flourishes with intimidating grace.”
+
+*Troll*
+
+Armed, slow movement, slow attack, darkvision, relentless, fast regeneration, stealth=0.5, vulnerability to poison and fire, ranged attack, ammo=1, tier 2.
+
+When a troll is in a space filled with bright light, it turns into a stone wall until the light stops. If it dies, it becomes a stone wall permenantly.
+
+    "Godless creatures of living stone, physically powerful yet brutish and clumsy. Banditry is second nature to them, so much that the rise of the outlaw clans has seen their tribes supplanted, their number incorporated into the outlaw gangs. The tales say that sunlight will turn them back into stone."
 
 *Mountebank*
 
@@ -408,7 +432,7 @@ This enemy spawns with 0-2 enemy-usable scrolls in its inventory.
 
 *Spellbreaker*
 
-Shouts, armed, 3 random enemy spells, tier 2.
+Shouts, armed, 3 random enemy spells, stealth=1, tier 2.
 
     “An escaped Strandian spellslave, as evidenced by the remains of the now shattered spellcage apparatus, which clings tenaciously to his body in ragged pieces. Free will has given him access to a greater range of powers, but with the spellcage broken his potency suffers.”
 
@@ -416,7 +440,17 @@ Shouts, armed, 3 random enemy spells, tier 2.
 
 Armed, Armored, drops gold, call to arms, stealth=1, perception=2, avoids bad gasses, avoids projectiles, flees at hp<35%, emboldened by: health%>playerhealth%, lures for traps, tier 3.
 
+Against other outlaws, this enemy has higher accuracy, parry, and dodge values.
+
     “Thief turned warrior turned merchant, this man rose from rags into wealth on the winds of his unflagging confidence, ruthlessness, and ability. His weapons and armor make him a truly fearsome melee combatant, and he is ever watchful for hidden blades and skulking bowmen, living as he does among his army of cutthroats.”
+
+*Trollman*
+
+Armed, Armored, stealth=1, ranged attack, ammo=1, slow attack, damaged by bright light, darkvision, regeneration, vulnerability to poison, tier 3.
+
+When a trollman is in a space filled with bright light, it turns into a stone wall until the light stops. If it dies, it becomes a stone wall permenantly.
+
+    "Enticed or coercered into prayer to the man-god, this troll has developed a man-like shape, and presumably man-like cunning. While they are still vulnerable to light, they are wise enough now to avoid it."
 
 **Wizards**:
 
