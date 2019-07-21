@@ -12,7 +12,14 @@ Items represent a collection of small, useful, and expendable tools.
 
 **Potion of Brilliance<sup>d</sup>**: When drunk, the drinker gains a large bonus to spellpower, their channeling time is reduced by 1, and they gain telepathy in a large oblong shape in front of them.
 
+**Potion of Chaos<sup>t</sup>**: When drunk, rolls to apply up to 8 buffs and debuffs. These include buffs and debuffs for all of weapon damage, accuracy, spell power, speed, parry, dodge, armor, hide, and sneak. The drinker has a 25% chance to receive a buff in each of these categories. For each category of buff they do not receive, they have a 35% chance to receive the corresponding debuff. These status effects last for a long duration.
+When thrown or used to coat a weapon, this potion functions the same as some other potion, chosen randomly from the list of all potions.
+
+**Potion of Force<sup>t</sup>**: When drunk, the drinker is immediately flies a long distance in a direction of their choice, though the direction is subject to random variation around the chosen direction. When thrown, the space the potion breaks on will be the center of a large AOE. Any creature in the center will take physical damage and be stunned. Any wall in the center will be destroyed. Any creature in the AOE will suffer knockback directly away from the center, of a value such that normal sized enemies will wind up just outside the AOE.
+
 **Potion of Grease<sup>d</sup>**: When drunk, grants the drinker the "Slippery" buff, granting them a bonus to dodge. When a slippery character dodges an attack, they move an additional space in a direction of their choosing. When thrown, covers the ground in an area with grease. Any character that walks onto grease will be unable to act, and continue moving in that direction at a rate of 2 spaces per round until they enter a non-greased space.
+
+**Potion of Hallucination<sup>t</sup>**: When thrown, a player struck will gain a "Hallucinating" status effect, causing the names and portraits of enemies to be randomized, a la nethack. When an enemy is struck, that enemy receives a status that makes it neutral to all creatures, including the player.
 
 **Potion of Lightning<sup>t</sup>**: When drunk, the drinker gains lightning resistance. When thrown, causes lightening damage in a small aoe around where it lands. When used to coat a weapon, deals lightning damage to the wielder.
 
